@@ -1,0 +1,40 @@
+name: Update Advocacy Calendar
+
+on:
+  # Run every day at 6:00 AM Eastern (11:00 UTC)
+  schedule:
+    - cron: "0 11 * * *"
+
+  # Also allow manual trigger from GitHub Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-calendar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scraper
+        run: python scraper.py
+
+      - name: Commit and push updated events.json
+        run: |
+          git config user.name "Delco Rising Bot"
+          git config user.email "delcorising@gmail.com"
+          git add docs/events.json
+          # Only commit if there are actual changes
+          git diff --staged --quiet || git commit -m "Auto-update calendar events $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
