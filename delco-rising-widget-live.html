@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Delco Rising – Advocacy Calendar</title>
+<title>Advocacy Calendar</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -13,46 +13,36 @@
   }
   body { font-family: 'IBM Plex Sans', sans-serif; background: var(--paper); color: var(--ink); }
   .widget-wrap { max-width: 780px; margin: 0 auto; padding: 28px 20px 40px; }
-
   .widget-header { border-bottom: 3px double var(--ink); padding-bottom: 10px; margin-bottom: 22px; }
   .widget-header h1 { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 900; letter-spacing: -0.02em; }
-
   .tabs { display: flex; border-bottom: 2px solid var(--ink); margin-bottom: 20px; }
   .tab-btn { background: none; border: none; font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); padding: 8px 20px 10px; cursor: pointer; position: relative; transition: color 0.2s; }
   .tab-btn.active { color: var(--ink); }
   .tab-btn.active::after { content: ''; position: absolute; bottom: -2px; left: 0; right: 0; height: 2px; background: var(--accent); }
-
-  /* FILTER BAR — colored chips */
+  .tab-bar-cta { margin-left: auto; font-family: 'IBM Plex Mono', monospace; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: white; background: var(--accent); padding: 5px 14px; text-decoration: none; align-self: center; transition: opacity 0.2s; white-space: nowrap; }
+  .tab-bar-cta:hover { opacity: 0.8; }
   .filter-bar { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 20px; align-items: center; }
   .filter-label { font-family: 'IBM Plex Mono', monospace; font-size: 0.62rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; flex-shrink: 0; }
-  .filter-chip {
-    border: 2px solid transparent; color: #fff;
-    font-family: 'IBM Plex Sans', sans-serif; font-size: 0.68rem; font-weight: 600;
-    padding: 3px 10px; cursor: pointer; transition: all 0.15s; opacity: 0.45;
-  }
+  .filter-chip { border: 2px solid transparent; color: #fff; font-family: 'IBM Plex Sans', sans-serif; font-size: 0.68rem; font-weight: 600; padding: 3px 10px; cursor: pointer; transition: all 0.15s; opacity: 0.45; }
   .filter-chip.active { opacity: 1; box-shadow: 0 0 0 2px var(--ink); }
   .filter-chip:hover { opacity: 0.85; }
-  .filter-chip.all-chip { background: var(--ink); }
-  .filter-chip[data-org="No Kings"]             { background: #c0392b; }
-  .filter-chip[data-org="DELCO Indivisible"]     { background: #1D3468; }
-  .filter-chip[data-org="Delco PA Indivisible"]  { background: #2471a3; }
-  .filter-chip[data-org="LWV"]                   { background: #27ae60; }
-  .filter-chip[data-org="Philly DSA"]            { background: #8e44ad; }
-  .filter-chip[data-org="DCIC"]                  { background: #c9770e; }
-  .filter-chip[data-org="County Council"]        { background: #555555; }
-  .filter-chip[data-org="Other"]                 { background: #7a7065; }
-
+  .chip-all            { background: var(--ink); }
+  .chip-nokings        { background: #c0392b; }
+  .chip-delcoindiv     { background: #1D3468; }
+  .chip-delcopainidiv  { background: #2471a3; }
+  .chip-lwv            { background: #27ae60; }
+  .chip-dsa            { background: #8e44ad; }
+  .chip-dcic           { background: #c9770e; }
+  .chip-council        { background: #555555; }
+  .chip-other          { background: #7a7065; }
   #tab-list { display: block; } #tab-calendar { display: none; }
   .event-list { display: flex; flex-direction: column; }
-  .event-item { display: grid; grid-template-columns: 64px 1fr auto; gap: 0 16px; padding: 14px 0; border-bottom: 1px solid var(--border); align-items: start; cursor: pointer; transition: background 0.1s; animation: fadeIn 0.3s ease; }
+  .event-item { display: grid; grid-template-columns: 64px 1fr auto; gap: 0 16px; padding: 14px 0; border-bottom: 1px solid var(--border); align-items: start; cursor: pointer; transition: background 0.1s; }
   .event-item:hover { background: rgba(29,52,104,0.04); }
-  @keyframes fadeIn { from { opacity:0; transform:translateY(5px); } to { opacity:1; transform:none; } }
-
   .event-date-block { text-align: center; background: var(--gray-block); color: var(--ink); padding: 6px 4px 8px; flex-shrink: 0; }
   .event-date-block .month { font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); display: block; }
   .event-date-block .day { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; line-height: 1; display: block; }
   .event-date-block .dow { font-family: 'IBM Plex Mono', monospace; font-size: 0.5rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); display: block; }
-
   .event-org-tag { display: inline-block; font-family: 'IBM Plex Mono', monospace; font-size: 0.58rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; padding: 1px 7px; margin-bottom: 5px; color: white; }
   .event-title { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; line-height: 1.25; color: var(--ink); margin-bottom: 4px; }
   .event-meta { font-size: 0.72rem; color: var(--muted); display: flex; gap: 12px; flex-wrap: wrap; }
@@ -60,8 +50,6 @@
   .event-link { font-family: 'IBM Plex Mono', monospace; font-size: 0.62rem; color: var(--accent); text-decoration: none; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; align-self: start; padding-top: 4px; white-space: nowrap; border-bottom: 1px solid transparent; transition: border-color 0.15s; }
   .event-link:hover { border-color: var(--accent); }
   .no-events { text-align: center; padding: 40px 20px; color: var(--muted); font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; letter-spacing: 0.05em; border: 1px dashed var(--border); }
-
-  /* CALENDAR */
   .cal-nav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
   .cal-nav-btn { background: none; border: 1px solid var(--border); color: var(--ink); font-size: 1rem; width: 32px; height: 32px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.15s; }
   .cal-nav-btn:hover { background: var(--ink); color: var(--paper); }
@@ -76,8 +64,6 @@
   .cal-event-dot { display: block; font-size: 0.6rem; font-family: 'IBM Plex Sans', sans-serif; font-weight: 500; padding: 1px 3px; margin-bottom: 2px; color: white; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; line-height: 1.4; }
   .cal-event-dot:hover { opacity: 0.8; }
   .cal-more { font-family: 'IBM Plex Mono', monospace; font-size: 0.55rem; color: var(--muted); cursor: pointer; display: block; }
-
-  /* MODAL */
   .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(26,26,26,0.6); z-index: 1000; align-items: center; justify-content: center; padding: 20px; }
   .modal-overlay.open { display: flex; }
   .modal-box { background: var(--paper); max-width: 460px; width: 100%; padding: 28px; position: relative; animation: modalIn 0.2s ease; }
@@ -93,8 +79,6 @@
   .modal-link:hover { opacity: 0.85; }
   .modal-gcal { display: inline-block; background: white; color: var(--ink); text-decoration: none; font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; padding: 7px 16px; border: 1px solid var(--border); transition: all 0.2s; }
   .modal-gcal:hover { background: var(--tag-bg); border-color: var(--ink); }
-
-  /* ADD EVENT */
   .admin-toggle { background: none; border: 1px dashed var(--border); color: var(--muted); font-family: 'IBM Plex Mono', monospace; font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 5px 12px; cursor: pointer; margin-top: 20px; transition: all 0.15s; display: block; }
   .admin-toggle:hover { background: var(--tag-bg); color: var(--ink); }
   .admin-panel { display: none; margin-top: 12px; border: 1px solid var(--border); padding: 18px; background: white; }
@@ -109,12 +93,10 @@
   .admin-btn:hover { opacity: 0.85; }
   .admin-note { font-family: 'IBM Plex Mono', monospace; font-size: 0.6rem; color: var(--muted); margin-top: 10px; line-height: 1.5; }
   .admin-success { color: #27ae60; font-family: 'IBM Plex Mono', monospace; font-size: 0.65rem; margin-top: 8px; display: none; }
-
   .widget-footer { margin-top: 24px; padding-top: 12px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
   .widget-footer a { font-family: 'IBM Plex Mono', monospace; font-size: 0.6rem; color: var(--muted); text-decoration: none; letter-spacing: 0.06em; text-transform: uppercase; }
   .widget-footer a:hover { color: var(--accent); }
   .widget-footer span { font-family: 'IBM Plex Mono', monospace; font-size: 0.58rem; color: var(--border); letter-spacing: 0.05em; }
-
   @media (max-width: 520px) {
     .event-item { grid-template-columns: 54px 1fr; }
     .event-link { display: none; }
@@ -130,22 +112,23 @@
   <div class="tabs">
     <button class="tab-btn active" onclick="switchTab('list',this)">Upcoming Events</button>
     <button class="tab-btn" onclick="switchTab('calendar',this)">Monthly View</button>
+    <a class="tab-bar-cta" href="mailto:delcorising@gmail.com">Add Your Organization</a>
   </div>
 
   <div class="filter-bar">
     <span class="filter-label">Filter:</span>
-    <button class="filter-chip all-chip active" onclick="setFilter('all',this)">All</button>
-    <button class="filter-chip active" data-org="No Kings" onclick="setFilter('No Kings',this)">No Kings</button>
-    <button class="filter-chip active" data-org="DELCO Indivisible" onclick="setFilter('DELCO Indivisible',this)">DELCO Indivisible</button>
-    <button class="filter-chip active" data-org="Delco PA Indivisible" onclick="setFilter('Delco PA Indivisible',this)">Delco PA Indivisible</button>
-    <button class="filter-chip active" data-org="LWV" onclick="setFilter('LWV',this)">LWV</button>
-    <button class="filter-chip active" data-org="Philly DSA" onclick="setFilter('Philly DSA',this)">Philly DSA</button>
-    <button class="filter-chip active" data-org="DCIC" onclick="setFilter('DCIC',this)">DCIC</button>
-    <button class="filter-chip active" data-org="County Council" onclick="setFilter('County Council',this)">County Council</button>
-    <button class="filter-chip active" data-org="Other" onclick="setFilter('Other',this)">Other</button>
+    <button class="filter-chip chip-all active"       onclick="setFilter('all',this)">All</button>
+    <button class="filter-chip chip-nokings active"   onclick="setFilter('No Kings',this)">No Kings</button>
+    <button class="filter-chip chip-delcoindiv active" onclick="setFilter('DELCO Indivisible',this)">DELCO Indivisible</button>
+    <button class="filter-chip chip-delcopainidiv active" onclick="setFilter('Delco PA Indivisible',this)">Delco PA Indivisible</button>
+    <button class="filter-chip chip-lwv active"       onclick="setFilter('LWV',this)">LWV</button>
+    <button class="filter-chip chip-dsa active"       onclick="setFilter('Philly DSA',this)">Philly DSA</button>
+    <button class="filter-chip chip-dcic active"      onclick="setFilter('DCIC',this)">DCIC</button>
+    <button class="filter-chip chip-council active"   onclick="setFilter('County Council',this)">County Council</button>
+    <button class="filter-chip chip-other active"     onclick="setFilter('Other',this)">Other</button>
   </div>
 
-  <div id="tab-list"><div class="event-list" id="eventList"></div></div>
+  <div id="tab-list"><div class="event-list" id="eventList"><div class="no-events" style="opacity:0.5">Loading events...</div></div></div>
 
   <div id="tab-calendar">
     <div class="cal-nav">
@@ -163,8 +146,8 @@
   <div class="admin-panel" id="adminPanel">
     <h3>Add a New Event</h3>
     <div class="admin-row">
-      <div><label>Event Title *</label><input type="text" id="f-title" placeholder="e.g. DCIC Community Meeting" /></div>
-      <div><label>Organization *</label>
+      <div><label>Event Title</label><input type="text" id="f-title" placeholder="e.g. DCIC Community Meeting" /></div>
+      <div><label>Organization</label>
         <select id="f-org">
           <option value="DELCO Indivisible">DELCO Indivisible</option>
           <option value="Delco PA Indivisible">Delco PA Indivisible</option>
@@ -178,29 +161,28 @@
       </div>
     </div>
     <div class="admin-row">
-      <div><label>Date *</label><input type="date" id="f-date" /></div>
-      <div><label>Time (optional)</label><input type="text" id="f-time" placeholder="e.g. 7:00 PM – 9:00 PM" /></div>
+      <div><label>Date</label><input type="date" id="f-date" /></div>
+      <div><label>Time (optional)</label><input type="text" id="f-time" placeholder="e.g. 7:00 PM" /></div>
     </div>
     <div class="admin-row">
-      <div><label>Location</label><input type="text" id="f-loc" placeholder="e.g. Media VFW, 11 Hilltop Rd" /></div>
-      <div><label>Event URL (optional)</label><input type="text" id="f-url" placeholder="https://..." /></div>
+      <div><label>Location</label><input type="text" id="f-loc" placeholder="e.g. Media VFW" /></div>
+      <div><label>Event URL</label><input type="text" id="f-url" placeholder="https://..." /></div>
     </div>
     <div class="admin-row full"><div><label>Description</label><textarea id="f-desc" placeholder="Brief description..."></textarea></div></div>
     <button class="admin-btn" onclick="addEvent()">Add to Calendar</button>
-    <div class="admin-success" id="adminSuccess">✓ Event added!</div>
-    <p class="admin-note">⚠ Events added here are saved in your browser only. To make them permanent for all visitors, paste the event into the SEED_EVENTS array in the HTML and re-upload to Squarespace.</p>
+    <div class="admin-success" id="adminSuccess">Event added!</div>
+    <p class="admin-note">Events added here are saved in your browser. To make permanent for all visitors, add them to your GitHub repo scraper and re-run.</p>
   </div>
 
   <div class="widget-footer">
     <a href="https://delcorising.substack.com" target="_blank">Delco Rising Newsletter</a>
-    <span>Updated March 27, 2026</span>
-    <a href="/cdn-cgi/l/email-protection#4c2829202f233e253f25222b0c2b212d2520622f2321">Submit an event →</a>
+    <span id="lastUpdated">Delco Rising Advocacy Calendar</span>
   </div>
 </div>
 
 <div class="modal-overlay" id="modal" onclick="closeModal(event)">
   <div class="modal-box">
-    <button class="modal-close" onclick="closeModal()">✕</button>
+    <button class="modal-close" onclick="closeModal()">&#x2715;</button>
     <div class="modal-org-tag" id="modalOrg"></div>
     <div class="modal-title" id="modalTitle"></div>
     <div class="modal-detail"><strong>Date</strong><span id="modalDate"></span></div>
@@ -208,277 +190,322 @@
     <div class="modal-detail" id="modalLocWrap"><strong>Where</strong><span id="modalLoc"></span></div>
     <div class="modal-desc" id="modalDesc"></div>
     <div class="modal-actions">
-      <a class="modal-link" id="modalLink" href="#" target="_blank">View Event →</a>
-      <a class="modal-gcal" id="modalGcal" href="#" target="_blank">+ Add to Google Calendar</a>
+      <a class="modal-link" id="modalLink" href="#" target="_blank">View Event</a>
+      <a class="modal-gcal" id="modalGcal" href="#" target="_blank">+ Google Calendar</a>
     </div>
   </div>
 </div>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-const ORG_COLORS = {
-  'No Kings':'#c0392b','DELCO Indivisible':'#1D3468','Delco PA Indivisible':'#2471a3',
-  'LWV':'#27ae60','Philly DSA':'#8e44ad','DCIC':'#c9770e',
-  'County Council':'#555555','Other':'#7a7065'
-};
+(function() {
 
-const SEED_EVENTS = [
-  // ── NO KINGS ──────────────────────────────────────────────────────────────
-  {id:'nk-1',_org:'No Kings',summary:'No Kings Day of Action – Media March & Rally',
-   start:{dateTime:'2026-03-28T11:00:00'},end:{dateTime:'2026-03-28T12:30:00'},
-   location:'Media Courthouse, N Edgemont St, Media, PA 19063',
-   description:'National No Kings Day of Action. Rise up, take to the streets: no thrones, no crowns, no kings. Commitment to nonviolent action is a core principle.',
-   htmlLink:'https://www.mobilize.us/delcoindivisible/event/844895/'},
-  {id:'nk-2',_org:'No Kings',summary:'No Kings: Springfield – Weekly Saturday Demo',start:{dateTime:'2026-03-28T13:00:00'},end:{dateTime:'2026-03-28T14:00:00'},location:'Springfield Mall, 1198 Baltimore Pike, Springfield, PA',description:'Weekly demonstration against the Trump administration. Every Saturday, rain or shine.',htmlLink:'https://www.mobilize.us/delcoindivisible/',recurring:'Every Saturday 1–2pm'},
-  {id:'nk-3',_org:'No Kings',summary:'No Kings: Springfield – Weekly Saturday Demo',start:{dateTime:'2026-04-04T13:00:00'},end:{dateTime:'2026-04-04T14:00:00'},location:'Springfield Mall, 1198 Baltimore Pike, Springfield, PA',description:'Weekly demonstration. Every Saturday, rain or shine.',htmlLink:'https://www.mobilize.us/delcoindivisible/',recurring:'Every Saturday 1–2pm'},
-  {id:'nk-4',_org:'No Kings',summary:'No Kings: Springfield – Weekly Saturday Demo',start:{dateTime:'2026-04-11T13:00:00'},end:{dateTime:'2026-04-11T14:00:00'},location:'Springfield Mall, 1198 Baltimore Pike, Springfield, PA',description:'Weekly demonstration. Every Saturday, rain or shine.',htmlLink:'https://www.mobilize.us/delcoindivisible/',recurring:'Every Saturday 1–2pm'},
-  {id:'nk-5',_org:'No Kings',summary:'No Kings: Springfield – Weekly Saturday Demo',start:{dateTime:'2026-04-18T13:00:00'},end:{dateTime:'2026-04-18T14:00:00'},location:'Springfield Mall, 1198 Baltimore Pike, Springfield, PA',description:'Weekly demonstration. Every Saturday, rain or shine.',htmlLink:'https://www.mobilize.us/delcoindivisible/',recurring:'Every Saturday 1–2pm'},
-  {id:'nk-6',_org:'No Kings',summary:'No Kings: Springfield – Weekly Saturday Demo',start:{dateTime:'2026-04-25T13:00:00'},end:{dateTime:'2026-04-25T14:00:00'},location:'Springfield Mall, 1198 Baltimore Pike, Springfield, PA',description:'Weekly demonstration. Every Saturday, rain or shine.',htmlLink:'https://www.mobilize.us/delcoindivisible/',recurring:'Every Saturday 1–2pm'},
-  {id:'nk-7',_org:'No Kings',summary:'No Kings: Springfield – Weekly Saturday Demo',start:{dateTime:'2026-05-02T13:00:00'},end:{dateTime:'2026-05-02T14:00:00'},location:'Springfield Mall, 1198 Baltimore Pike, Springfield, PA',description:'Weekly demonstration. Every Saturday, rain or shine.',htmlLink:'https://www.mobilize.us/delcoindivisible/',recurring:'Every Saturday 1–2pm'},
-  {id:'nk-8',_org:'No Kings',summary:'No Kings: Springfield – Weekly Saturday Demo',start:{dateTime:'2026-05-09T13:00:00'},end:{dateTime:'2026-05-09T14:00:00'},location:'Springfield Mall, 1198 Baltimore Pike, Springfield, PA',description:'Weekly demonstration. Every Saturday, rain or shine.',htmlLink:'https://www.mobilize.us/delcoindivisible/',recurring:'Every Saturday 1–2pm'},
-  {id:'nk-9',_org:'No Kings',summary:'No Kings: Springfield – Weekly Saturday Demo',start:{dateTime:'2026-05-16T13:00:00'},end:{dateTime:'2026-05-16T14:00:00'},location:'Springfield Mall, 1198 Baltimore Pike, Springfield, PA',description:'Weekly demonstration. Every Saturday, rain or shine.',htmlLink:'https://www.mobilize.us/delcoindivisible/',recurring:'Every Saturday 1–2pm'},
+  // ── CONFIG — update this URL to your GitHub Pages URL ──────────────────────
+  var EVENTS_URL = 'https://nickwgiannini.github.io/delco-advocacy-calendar/events.json';
 
-  // ── DELCO INDIVISIBLE ─────────────────────────────────────────────────────
-  {id:'di-m1',_org:'DELCO Indivisible',summary:"Mondays at McCormick's – Weekly Protest",start:{dateTime:'2026-03-30T12:00:00'},end:{dateTime:'2026-03-30T13:30:00'},location:'2000 Market St, Philadelphia, PA',description:"Philly Indivisible's weekly Monday noon protest, rain or shine.",htmlLink:'https://delcoindivisible.org/',recurring:'Every Monday noon–1:30pm'},
-  {id:'di-m2',_org:'DELCO Indivisible',summary:"Mondays at McCormick's – Weekly Protest",start:{dateTime:'2026-04-06T12:00:00'},end:{dateTime:'2026-04-06T13:30:00'},location:'2000 Market St, Philadelphia, PA',description:'Weekly protest every Monday at noon, rain or shine.',htmlLink:'https://delcoindivisible.org/',recurring:'Every Monday noon–1:30pm'},
-  {id:'di-m3',_org:'DELCO Indivisible',summary:"Mondays at McCormick's – Weekly Protest",start:{dateTime:'2026-04-13T12:00:00'},end:{dateTime:'2026-04-13T13:30:00'},location:'2000 Market St, Philadelphia, PA',description:'Weekly protest every Monday at noon, rain or shine.',htmlLink:'https://delcoindivisible.org/',recurring:'Every Monday noon–1:30pm'},
-  {id:'di-m4',_org:'DELCO Indivisible',summary:"Mondays at McCormick's – Weekly Protest",start:{dateTime:'2026-04-20T12:00:00'},end:{dateTime:'2026-04-20T13:30:00'},location:'2000 Market St, Philadelphia, PA',description:'Weekly protest every Monday at noon, rain or shine.',htmlLink:'https://delcoindivisible.org/',recurring:'Every Monday noon–1:30pm'},
-  {id:'di-m5',_org:'DELCO Indivisible',summary:"Mondays at McCormick's – Weekly Protest",start:{dateTime:'2026-04-27T12:00:00'},end:{dateTime:'2026-04-27T13:30:00'},location:'2000 Market St, Philadelphia, PA',description:'Weekly protest every Monday at noon, rain or shine.',htmlLink:'https://delcoindivisible.org/',recurring:'Every Monday noon–1:30pm'},
-  {id:'di-w1',_org:'DELCO Indivisible',summary:'Social Security Wednesdays',start:{dateTime:'2026-04-01T16:00:00'},end:{dateTime:'2026-04-01T17:00:00'},location:'RSVP for location',description:'Join Indivisible Chester County and Savesocialsecurity.net every Wednesday to support the SSA.',htmlLink:'https://www.mobilize.us/mobilize/event/778940/',recurring:'Every Wednesday 4–5pm'},
-  {id:'di-w2',_org:'DELCO Indivisible',summary:'Social Security Wednesdays',start:{dateTime:'2026-04-08T16:00:00'},end:{dateTime:'2026-04-08T17:00:00'},location:'RSVP for location',description:'Weekly SSA support action. RSVP for location.',htmlLink:'https://www.mobilize.us/mobilize/event/778940/',recurring:'Every Wednesday 4–5pm'},
-  {id:'di-w3',_org:'DELCO Indivisible',summary:'Social Security Wednesdays',start:{dateTime:'2026-04-15T16:00:00'},end:{dateTime:'2026-04-15T17:00:00'},location:'RSVP for location',description:'Weekly SSA support action. RSVP for location.',htmlLink:'https://www.mobilize.us/mobilize/event/778940/',recurring:'Every Wednesday 4–5pm'},
-  {id:'di-town',_org:'DELCO Indivisible',summary:'PA Budget Process Town Hall',start:{dateTime:'2026-04-01T19:00:00'},end:{dateTime:'2026-04-01T20:30:00'},location:'TBA – check Mobilize for details',description:'A conversation breaking down the Pennsylvania budget process.',htmlLink:'https://www.mobilize.us/delcoindivisible/'},
-  {id:'di-cb1',_org:'DELCO Indivisible',summary:'Citizens Bank: Stop Funding Cruelty',start:{dateTime:'2026-04-04T11:00:00'},end:{dateTime:'2026-04-04T12:00:00'},location:'Citizens Bank branch – location changes monthly, check Mobilize',description:'Monthly action raising awareness about Citizens Bank\'s support for GEO Group, which runs the Moshannon Valley ICE facility in PA.',htmlLink:'https://www.mobilize.us/delcoindivisible/',recurring:'1st Saturday each month 11am–noon'},
-  {id:'di-cb2',_org:'DELCO Indivisible',summary:'Citizens Bank: Stop Funding Cruelty',start:{dateTime:'2026-05-02T11:00:00'},end:{dateTime:'2026-05-02T12:00:00'},location:'Citizens Bank branch – location changes monthly, check Mobilize',description:'Monthly action. Check Mobilize for location.',htmlLink:'https://www.mobilize.us/delcoindivisible/',recurring:'1st Saturday each month 11am–noon'},
-  {id:'di-mtg4',_org:'DELCO Indivisible',summary:'DELCO Indivisible Monthly Meeting',start:{dateTime:'2026-04-16T19:00:00'},end:{dateTime:'2026-04-16T20:30:00'},location:'Media VFW Post, 11 Hilltop Rd, Media, PA',description:'3rd Thursday each month at Media VFW at 7:00 PM. Open to all.',htmlLink:'https://www.mobilize.us/delcoindivisible/event/790082/',recurring:'3rd Thursday each month'},
-  {id:'di-mtg5',_org:'DELCO Indivisible',summary:'DELCO Indivisible Monthly Meeting',start:{dateTime:'2026-05-21T19:00:00'},end:{dateTime:'2026-05-21T20:30:00'},location:'Media VFW Post, 11 Hilltop Rd, Media, PA',description:'3rd Thursday each month at Media VFW at 7:00 PM. Open to all.',htmlLink:'https://www.mobilize.us/delcoindivisible/event/790082/',recurring:'3rd Thursday each month'},
-  {id:'di-mtg6',_org:'DELCO Indivisible',summary:'DELCO Indivisible Monthly Meeting',start:{dateTime:'2026-06-18T19:00:00'},end:{dateTime:'2026-06-18T20:30:00'},location:'Media VFW Post, 11 Hilltop Rd, Media, PA',description:'3rd Thursday each month at Media VFW at 7:00 PM. Open to all.',htmlLink:'https://www.mobilize.us/delcoindivisible/event/790082/',recurring:'3rd Thursday each month'},
+  var ORG_COLORS = {
+    'No Kings': '#c0392b',
+    'DELCO Indivisible': '#1D3468',
+    'Delco PA Indivisible': '#2471a3',
+    'LWV': '#27ae60',
+    'Philly DSA': '#8e44ad',
+    'DCIC': '#c9770e',
+    'County Council': '#555555',
+    'Other': '#7a7065'
+  };
 
-  // ── DELCO PA INDIVISIBLE ──────────────────────────────────────────────────
-  {id:'dpi-1',_org:'Delco PA Indivisible',summary:'Delco PA Indivisible General Meeting',start:{dateTime:'2026-03-24T19:00:00'},end:{dateTime:'2026-03-24T21:00:00'},location:'Media VFW Post 3460, 11 Hilltop Rd, Media, PA 19063',description:'2nd & 4th Tuesdays each month at Media VFW Post 3460. Open to all.',htmlLink:'https://sites.google.com/view/delcopaindivisible',recurring:'2nd & 4th Tuesdays 7–9pm'},
-  {id:'dpi-2',_org:'Delco PA Indivisible',summary:'Delco PA Indivisible General Meeting',start:{dateTime:'2026-04-14T19:00:00'},end:{dateTime:'2026-04-14T21:00:00'},location:'Media VFW Post 3460, 11 Hilltop Rd, Media, PA 19063',description:'2nd & 4th Tuesdays each month. Open to all.',htmlLink:'https://sites.google.com/view/delcopaindivisible',recurring:'2nd & 4th Tuesdays 7–9pm'},
-  {id:'dpi-3',_org:'Delco PA Indivisible',summary:'Delco PA Indivisible General Meeting',start:{dateTime:'2026-04-28T19:00:00'},end:{dateTime:'2026-04-28T21:00:00'},location:'Media VFW Post 3460, 11 Hilltop Rd, Media, PA 19063',description:'2nd & 4th Tuesdays each month. Open to all.',htmlLink:'https://sites.google.com/view/delcopaindivisible',recurring:'2nd & 4th Tuesdays 7–9pm'},
-  {id:'dpi-4',_org:'Delco PA Indivisible',summary:'Delco PA Indivisible General Meeting',start:{dateTime:'2026-05-12T19:00:00'},end:{dateTime:'2026-05-12T21:00:00'},location:'Media VFW Post 3460, 11 Hilltop Rd, Media, PA 19063',description:'2nd & 4th Tuesdays each month. Open to all.',htmlLink:'https://sites.google.com/view/delcopaindivisible',recurring:'2nd & 4th Tuesdays 7–9pm'},
-  {id:'dpi-5',_org:'Delco PA Indivisible',summary:'Delco PA Indivisible General Meeting',start:{dateTime:'2026-05-26T19:00:00'},end:{dateTime:'2026-05-26T21:00:00'},location:'Media VFW Post 3460, 11 Hilltop Rd, Media, PA 19063',description:'2nd & 4th Tuesdays each month. Open to all.',htmlLink:'https://sites.google.com/view/delcopaindivisible',recurring:'2nd & 4th Tuesdays 7–9pm'},
-  {id:'dpi-6',_org:'Delco PA Indivisible',summary:'Delco PA Indivisible General Meeting',start:{dateTime:'2026-06-09T19:00:00'},end:{dateTime:'2026-06-09T21:00:00'},location:'Media VFW Post 3460, 11 Hilltop Rd, Media, PA 19063',description:'2nd & 4th Tuesdays each month. Open to all.',htmlLink:'https://sites.google.com/view/delcopaindivisible',recurring:'2nd & 4th Tuesdays 7–9pm'},
+  var MS = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+  var DS = ['SUN','MON','TUE','WED','THU','FRI','SAT'];
+  var ML = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
-  // ── LWV ───────────────────────────────────────────────────────────────────
-  {id:'lwv-1',_org:'LWV',summary:'LWV-CDC: Coping with Political Turbulence (Webinar)',start:{dateTime:'2026-04-09T19:00:00'},location:'Zoom – register at my.lwv.org/pennsylvania/central-delaware-county',description:'Dr. Lisa Goldstein, a Delaware County psychiatrist, explores evidence-based coping strategies for navigating today\'s turbulent political environment and staying empowered as an advocate.',htmlLink:'https://my.lwv.org/pennsylvania/central-delaware-county/calendar'},
-  {id:'lwv-2',_org:'LWV',summary:'PA Primary Election Day',start:{date:'2026-05-19'},location:'Polls open 7AM–8PM across Pennsylvania',description:'Pennsylvania Primary Election. Register by April 18. Request mail-in ballot by May 12. Find your polling place at vote.pa.gov.',htmlLink:'https://my.lwv.org/pennsylvania/central-delaware-county/voter-toolkit/election-calendar-0'},
-  {id:'lwv-3',_org:'LWV',summary:'PA General Election Day',start:{date:'2026-11-03'},location:'Polls open 7AM–8PM across Pennsylvania',description:'Pennsylvania General Election — U.S. Senate and all U.S. House seats on ballot. Register by Oct. 13. Mail-in ballot request deadline: Oct. 27.',htmlLink:'https://my.lwv.org/pennsylvania/central-delaware-county/voter-toolkit/election-calendar-0'},
+  var liveEvents = [];
+  var customEvents = [];
+  var activeFilter = 'all';
+  var calViewDate = new Date();
 
-  // ── PHILLY DSA ────────────────────────────────────────────────────────────
-  {id:'dsa-1',_org:'Philly DSA',summary:'Philly DSA General Meeting',start:{dateTime:'2026-04-06T18:30:00'},end:{dateTime:'2026-04-06T21:00:00'},location:'Philadelphia, PA – location at phillydsa.org/events',description:'Monthly chapterwide meeting. Members deliberate on priorities and plan chapter strategy. All welcome.',htmlLink:'https://www.phillydsa.org/events',recurring:'Monthly – check phillydsa.org'},
-  {id:'dsa-2',_org:'Philly DSA',summary:'Philly DSA May Day Celebration',start:{dateTime:'2026-05-01T12:00:00'},location:'Philadelphia, PA – details at phillydsa.org/mayday',description:'Annual May Day celebration of workers and the labor movement. Details and location TBA.',htmlLink:'http://phillydsa.org/mayday'},
-  {id:'dsa-3',_org:'Philly DSA',summary:'Philly DSA General Meeting',start:{dateTime:'2026-05-04T18:30:00'},end:{dateTime:'2026-05-04T21:00:00'},location:'Philadelphia, PA – location at phillydsa.org/events',description:'Monthly chapterwide meeting. All welcome.',htmlLink:'https://www.phillydsa.org/events',recurring:'Monthly – check phillydsa.org'},
-  {id:'dsa-4',_org:'Philly DSA',summary:'Philly DSA General Meeting',start:{dateTime:'2026-06-01T18:30:00'},end:{dateTime:'2026-06-01T21:00:00'},location:'Philadelphia, PA – location at phillydsa.org/events',description:'Monthly chapterwide meeting. All welcome.',htmlLink:'https://www.phillydsa.org/events',recurring:'Monthly – check phillydsa.org'},
+  try { customEvents = JSON.parse(localStorage.getItem('delco_custom_events') || '[]'); } catch(e) {}
 
-  // ── DCIC ──────────────────────────────────────────────────────────────────
-  {id:'dcic-1',_org:'DCIC',summary:'DCIC: Know Your Rights Training',start:{dateTime:'2026-04-07T18:00:00'},location:'Delaware County – check DCIC Facebook page for location',description:'The Delaware County Immigrant Coalition hosts periodic Know Your Rights trainings. Check their Facebook page for confirmed details.',htmlLink:'https://www.facebook.com/delcoimmigrant/'},
-  {id:'dcic-2',_org:'DCIC',summary:'DCIC Community Meeting',start:{dateTime:'2026-04-21T18:30:00'},location:'Delaware County – check DCIC Facebook page for location',description:'Periodic community meetings by the Delaware County Immigrant Coalition. Open to all.',htmlLink:'https://www.facebook.com/delcoimmigrant/'},
-
-  // ── DELAWARE COUNTY COUNCIL ───────────────────────────────────────────────
-  // Pattern: Regular = 1st & 3rd Wednesday; Preliminary = Tuesday prior, 1:00 PM
-  // Regular: 6:00 PM Jan–May; 1:00 PM Jun–Dec
-  // Location: Government Center, 1st Floor, 201 W Front St, Media, PA
-  {id:'cc-p-0331',_org:'County Council',summary:'County Council Preliminary Agenda Meeting',start:{dateTime:'2026-03-31T13:00:00'},end:{dateTime:'2026-03-31T15:00:00'},location:'Government Center, 201 W Front St, Media, PA (Room 200)',description:'Preliminary Agenda Meeting to familiarize Council and the public on matters before the Wednesday Regular Public Meeting. Open to the public.',htmlLink:'https://www.delcopa.gov/council/meetings',recurring:'Tuesday before each Council meeting'},
-  {id:'cc-r-0401',_org:'County Council',summary:'County Council Regular Public Meeting',start:{dateTime:'2026-04-01T18:00:00'},end:{dateTime:'2026-04-01T20:00:00'},location:'Government Center, 1st Floor, 201 W Front St, Media, PA',description:'Regular Public Meeting. Open to the public. Residents may speak during Public Comment. Meetings typically conclude around 8:00 PM.',htmlLink:'https://www.delcopa.gov/council/meetings',recurring:'1st & 3rd Wednesday each month'},
-  {id:'cc-p-0414',_org:'County Council',summary:'County Council Preliminary Agenda Meeting',start:{dateTime:'2026-04-14T13:00:00'},end:{dateTime:'2026-04-14T15:00:00'},location:'Government Center, 201 W Front St, Media, PA (Room 200)',description:'Preliminary Agenda Meeting. Open to the public.',htmlLink:'https://www.delcopa.gov/council/meetings',recurring:'Tuesday before each Council meeting'},
-  {id:'cc-r-0415',_org:'County Council',summary:'County Council Regular Public Meeting',start:{dateTime:'2026-04-15T18:00:00'},end:{dateTime:'2026-04-15T20:00:00'},location:'Government Center, 1st Floor, 201 W Front St, Media, PA',description:'Regular Public Meeting. Open to the public. Public Comment available.',htmlLink:'https://www.delcopa.gov/council/meetings',recurring:'1st & 3rd Wednesday each month'},
-  {id:'cc-p-0505',_org:'County Council',summary:'County Council Preliminary Agenda Meeting',start:{dateTime:'2026-05-05T13:00:00'},end:{dateTime:'2026-05-05T15:00:00'},location:'Government Center, 201 W Front St, Media, PA (Room 200)',description:'Preliminary Agenda Meeting. Open to the public.',htmlLink:'https://www.delcopa.gov/council/meetings',recurring:'Tuesday before each Council meeting'},
-  {id:'cc-r-0506',_org:'County Council',summary:'County Council Regular Public Meeting',start:{dateTime:'2026-05-06T18:00:00'},end:{dateTime:'2026-05-06T20:00:00'},location:'Government Center, 1st Floor, 201 W Front St, Media, PA',description:'Regular Public Meeting. Open to the public. Public Comment available.',htmlLink:'https://www.delcopa.gov/council/meetings',recurring:'1st & 3rd Wednesday each month'},
-  {id:'cc-p-0519',_org:'County Council',summary:'County Council Preliminary Agenda Meeting',start:{dateTime:'2026-05-19T13:00:00'},end:{dateTime:'2026-05-19T15:00:00'},location:'Government Center, 201 W Front St, Media, PA (Room 200)',description:'Preliminary Agenda Meeting. Open to the public. Note: also PA Primary Election Day.',htmlLink:'https://www.delcopa.gov/council/meetings',recurring:'Tuesday before each Council meeting'},
-  {id:'cc-r-0520',_org:'County Council',summary:'County Council Regular Public Meeting',start:{dateTime:'2026-05-20T18:00:00'},end:{dateTime:'2026-05-20T20:00:00'},location:'Government Center, 1st Floor, 201 W Front St, Media, PA',description:'Regular Public Meeting. Open to the public. Public Comment available.',htmlLink:'https://www.delcopa.gov/council/meetings',recurring:'1st & 3rd Wednesday each month'},
-  {id:'cc-p-0602',_org:'County Council',summary:'County Council Preliminary Agenda Meeting',start:{dateTime:'2026-06-02T13:00:00'},end:{dateTime:'2026-06-02T15:00:00'},location:'Government Center, 201 W Front St, Media, PA (Room 200)',description:'Preliminary Agenda Meeting. Open to the public.',htmlLink:'https://www.delcopa.gov/council/meetings',recurring:'Tuesday before each Council meeting'},
-  {id:'cc-r-0603',_org:'County Council',summary:'County Council Regular Public Meeting',start:{dateTime:'2026-06-03T13:00:00'},end:{dateTime:'2026-06-03T15:00:00'},location:'Government Center, 1st Floor, 201 W Front St, Media, PA',description:'Regular Public Meeting at 1:00 PM (June–December schedule). Open to the public. Public Comment available.',htmlLink:'https://www.delcopa.gov/council/meetings',recurring:'1st & 3rd Wednesday each month'},
-  {id:'cc-p-0616',_org:'County Council',summary:'County Council Preliminary Agenda Meeting',start:{dateTime:'2026-06-16T13:00:00'},end:{dateTime:'2026-06-16T15:00:00'},location:'Government Center, 201 W Front St, Media, PA (Room 200)',description:'Preliminary Agenda Meeting. Open to the public.',htmlLink:'https://www.delcopa.gov/council/meetings',recurring:'Tuesday before each Council meeting'},
-  {id:'cc-r-0617',_org:'County Council',summary:'County Council Regular Public Meeting',start:{dateTime:'2026-06-17T13:00:00'},end:{dateTime:'2026-06-17T15:00:00'},location:'Government Center, 1st Floor, 201 W Front St, Media, PA',description:'Regular Public Meeting at 1:00 PM. Open to the public. Public Comment available.',htmlLink:'https://www.delcopa.gov/council/meetings',recurring:'1st & 3rd Wednesday each month'},
-  {id:'cc-p-0630',_org:'County Council',summary:'County Council Preliminary Agenda Meeting',start:{dateTime:'2026-06-30T13:00:00'},end:{dateTime:'2026-06-30T15:00:00'},location:'Government Center, 201 W Front St, Media, PA (Room 200)',description:'Preliminary Agenda Meeting. Open to the public.',htmlLink:'https://www.delcopa.gov/council/meetings',recurring:'Tuesday before each Council meeting'},
-  {id:'cc-r-0701',_org:'County Council',summary:'County Council Regular Public Meeting',start:{dateTime:'2026-07-01T13:00:00'},end:{dateTime:'2026-07-01T15:00:00'},location:'Government Center, 1st Floor, 201 W Front St, Media, PA',description:'Regular Public Meeting at 1:00 PM. Open to the public. Public Comment available.',htmlLink:'https://www.delcopa.gov/council/meetings',recurring:'1st & 3rd Wednesday each month'},
-  {id:'cc-p-0714',_org:'County Council',summary:'County Council Preliminary Agenda Meeting',start:{dateTime:'2026-07-14T13:00:00'},end:{dateTime:'2026-07-14T15:00:00'},location:'Government Center, 201 W Front St, Media, PA (Room 200)',description:'Preliminary Agenda Meeting. Open to the public.',htmlLink:'https://www.delcopa.gov/council/meetings'},
-  {id:'cc-r-0715',_org:'County Council',summary:'County Council Regular Public Meeting',start:{dateTime:'2026-07-15T13:00:00'},end:{dateTime:'2026-07-15T15:00:00'},location:'Government Center, 1st Floor, 201 W Front St, Media, PA',description:'Regular Public Meeting at 1:00 PM. Open to the public.',htmlLink:'https://www.delcopa.gov/council/meetings'},
-];
-
-// ── LIVE JSON URL ─────────────────────────────────────────────────────────────
-// After setting up GitHub Pages, replace this URL with your own:
-// https://[your-github-username].github.io/delco-calendar/events.json
-const LIVE_EVENTS_URL = 'https://nickwgiannini.github.io/delco-advocacy-calendar/events.json';
-
-let liveEvents = [];   // fetched from GitHub Pages daily
-let customEvents = [];
-try { customEvents = JSON.parse(localStorage.getItem('delco_custom_events') || '[]'); } catch(e){}
-let activeFilter = 'all';
-let calViewDate = new Date();
-let lastUpdated = null;
-
-async function loadLiveEvents() {
-  // Show loading state
-  document.getElementById('eventList').innerHTML = '<div class="no-events" style="opacity:0.5">Loading events...</div>';
-  try {
-    const res = await fetch(LIVE_EVENTS_URL + '?t=' + Date.now()); // cache-bust
-    if (!res.ok) throw new Error('fetch failed');
-    const data = await res.json();
-    liveEvents = data.events || [];
-    lastUpdated = data.updated || null;
-    // Update footer timestamp
-    const footerSpan = document.querySelector('.widget-footer span');
-    if (footerSpan && lastUpdated) {
-      const d = new Date(lastUpdated);
-      footerSpan.textContent = 'Updated ' + d.toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'});
-    }
-    console.log(`✅ Loaded ${liveEvents.length} live events`);
-  } catch(e) {
-    console.warn('⚠ Could not fetch live events, falling back to built-in events:', e);
-    // Fall back to SEED_EVENTS if fetch fails
-    liveEvents = SEED_EVENTS;
+  // ── LOAD ───────────────────────────────────────────────────────────────────
+  function loadEvents() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', EVENTS_URL + '?t=' + Date.now(), true);
+    xhr.onload = function() {
+      if (xhr.status >= 200 && xhr.status < 300) {
+        try {
+          var data = JSON.parse(xhr.responseText);
+          liveEvents = data.events || [];
+          if (data.updated) {
+            var d = new Date(data.updated);
+            var el = document.getElementById('lastUpdated');
+            if (el) el.textContent = 'Updated ' + d.toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'});
+          }
+          console.log('Loaded ' + liveEvents.length + ' events');
+        } catch(e) {
+          console.warn('JSON parse error:', e);
+        }
+      } else {
+        console.warn('Events fetch returned status:', xhr.status);
+      }
+      render();
+      renderCalNav();
+    };
+    xhr.onerror = function() {
+      console.warn('Events fetch failed — network error');
+      render();
+      renderCalNav();
+    };
+    xhr.send();
   }
-  render();
-  renderCalNav();
-}
 
-function allEvents() {
-  const now = new Date(); now.setHours(0,0,0,0);
-  // Merge live events + any custom events added via the form
-  // Use liveEvents if populated, otherwise fall back to SEED_EVENTS
-  const base = liveEvents.length > 0 ? liveEvents : SEED_EVENTS;
-  return [...base, ...customEvents]
-    .filter(e => new Date(e.start.dateTime || e.start.date) >= now)
-    .sort((a,b) => new Date(a.start.dateTime||a.start.date) - new Date(b.start.dateTime||b.start.date));
-}
-function filtered() {
-  return activeFilter==='all' ? allEvents() : allEvents().filter(e=>e._org===activeFilter);
-}
+  // ── DATA ───────────────────────────────────────────────────────────────────
+  function allEvents() {
+    var now = new Date();
+    now.setHours(0, 0, 0, 0);
+    var base = liveEvents.length > 0 ? liveEvents : [];
+    return base.concat(customEvents)
+      .filter(function(e) {
+        var d = new Date(e.start.dateTime || e.start.date);
+        return d >= now;
+      })
+      .sort(function(a, b) {
+        return new Date(a.start.dateTime || a.start.date) - new Date(b.start.dateTime || b.start.date);
+      });
+  }
 
-window.addEventListener('DOMContentLoaded', ()=>{ loadLiveEvents(); renderCalNav(); });
-function render() { renderList(); renderCal(); }
+  function filtered() {
+    var evs = allEvents();
+    if (activeFilter === 'all') return evs;
+    return evs.filter(function(e) { return e._org === activeFilter; });
+  }
 
+  // ── RENDER LIST ────────────────────────────────────────────────────────────
+  function renderList() {
+    var evs = filtered();
+    var c = document.getElementById('eventList');
+    if (!evs.length) {
+      c.innerHTML = '<div class="no-events">No upcoming events for this filter.</div>';
+      return;
+    }
+    var html = '';
+    for (var i = 0; i < evs.length; i++) {
+      var e = evs[i];
+      var d = pd(e.start);
+      var color = ORG_COLORS[e._org] || '#7a7065';
+      var timeStr = e.start.dateTime ? ft(pd(e.start)) : 'All day';
+      if (e.end && e.end.dateTime) timeStr += ' \u2013 ' + ft(pd(e.end));
+      var loc = e.location ? '\uD83D\uDCCD ' + e.location.split(',')[0] : '';
+      var rec = e.recurring ? '<span class="recurring-badge">\u21BB ' + e.recurring + '</span>' : '';
+      var detailsLink = e.htmlLink
+        ? '<a class="event-link" href="' + e.htmlLink + '" target="_blank" onclick="event.stopPropagation()">Details &rarr;</a>'
+        : '';
+      var idx = i;
+      html += '<div class="event-item" data-idx="' + idx + '">' +
+        '<div class="event-date-block">' +
+          '<span class="month">' + MS[d.getMonth()] + '</span>' +
+          '<span class="day">' + d.getDate() + '</span>' +
+          '<span class="dow">' + DS[d.getDay()] + '</span>' +
+        '</div>' +
+        '<div class="event-info">' +
+          '<span class="event-org-tag" style="background:' + color + '">' + e._org + '</span>' +
+          '<div class="event-title">' + e.summary + rec + '</div>' +
+          '<div class="event-meta">' +
+            '<span>\uD83D\uDD50 ' + timeStr + '</span>' +
+            (loc ? '<span>' + loc + '</span>' : '') +
+          '</div>' +
+        '</div>' +
+        detailsLink +
+      '</div>';
+    }
+    c.innerHTML = html;
 
-const MS = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
-const DS = ['SUN','MON','TUE','WED','THU','FRI','SAT'];
+    // Attach click handlers after rendering
+    var items = c.querySelectorAll('.event-item');
+    for (var j = 0; j < items.length; j++) {
+      (function(ev) {
+        items[j].addEventListener('click', function(evt) {
+          if (evt.target.classList.contains('event-link')) return;
+          openModal(ev);
+        });
+      })(evs[j]);
+    }
+  }
 
-function renderList() {
-  const evs = filtered(), c = document.getElementById('eventList');
-  if (!evs.length) { c.innerHTML='<div class="no-events">No upcoming events for this filter.</div>'; return; }
-  c.innerHTML = evs.map(e => {
-    const d=pd(e.start), color=ORG_COLORS[e._org]||'#7a7065';
-    const timeStr = e.start.dateTime ? ft(pd(e.start))+(e.end?' – '+ft(pd(e.end)):'') : 'All day';
-    const loc = e.location ? '📍 '+e.location.split(',')[0] : '';
-    const rec = e.recurring ? `<span class="recurring-badge">↻ ${e.recurring}</span>` : '';
-    const safe = ee(e);
-    return `<div class="event-item" onclick="openModal('${safe}')">
-      <div class="event-date-block">
-        <span class="month">${MS[d.getMonth()]}</span>
-        <span class="day">${d.getDate()}</span>
-        <span class="dow">${DS[d.getDay()]}</span>
-      </div>
-      <div class="event-info">
-        <span class="event-org-tag" style="background:${color}">${e._org}</span>
-        <div class="event-title">${e.summary}${rec}</div>
-        <div class="event-meta"><span>🕐 ${timeStr}</span>${loc?`<span>${loc}</span>`:''}</div>
-      </div>
-      ${e.htmlLink?`<a class="event-link" href="${e.htmlLink}" target="_blank" onclick="event.stopPropagation()">Details →</a>`:''}
-    </div>`;
-  }).join('');
-}
+  // ── RENDER CALENDAR ────────────────────────────────────────────────────────
+  function renderCalNav() {
+    var el = document.getElementById('calMonthLabel');
+    if (el) el.textContent = ML[calViewDate.getMonth()] + ' ' + calViewDate.getFullYear();
+  }
 
-function renderCalNav() {
-  const ML=['January','February','March','April','May','June','July','August','September','October','November','December'];
-  document.getElementById('calMonthLabel').textContent = ML[calViewDate.getMonth()]+' '+calViewDate.getFullYear();
-}
-function changeMonth(d){ calViewDate.setMonth(calViewDate.getMonth()+d); renderCalNav(); renderCal(); }
+  function changeMonth(dir) {
+    calViewDate.setMonth(calViewDate.getMonth() + dir);
+    renderCalNav();
+    renderCal();
+  }
 
-function renderCal() {
-  const yr=calViewDate.getFullYear(), mo=calViewDate.getMonth(), today=new Date();
-  const fd=new Date(yr,mo,1).getDay(), dim=new Date(yr,mo+1,0).getDate(), pd2=new Date(yr,mo,0).getDate();
-  const evs=filtered(), dm={};
-  evs.forEach(e=>{ const d=pd(e.start); if(d.getFullYear()===yr&&d.getMonth()===mo){ const day=d.getDate(); if(!dm[day])dm[day]=[]; dm[day].push(e); }});
-  let html='',dc=1,nc=1;
-  for(let r=0;r<6;r++){
-    html+='<tr>';
-    for(let col=0;col<7;col++){
-      const ci=r*7+col;
-      if(ci<fd) html+=`<td class="other-month"><span class="cal-day-num">${pd2-fd+ci+1}</span></td>`;
-      else if(dc>dim) html+=`<td class="other-month"><span class="cal-day-num">${nc++}</span></td>`;
-      else {
-        const isT=yr===today.getFullYear()&&mo===today.getMonth()&&dc===today.getDate();
-        const ce=dm[dc]||[];
-        let eh=ce.slice(0,2).map(e=>`<span class="cal-event-dot" style="background:${ORG_COLORS[e._org]||'#7a7065'}" onclick="openModal('${ee(e)}')">${e.summary}</span>`).join('');
-        if(ce.length>2) eh+=`<span class="cal-more">+${ce.length-2} more</span>`;
-        html+=`<td class="${isT?'today':''}"><span class="cal-day-num">${dc}</span>${eh}</td>`;
-        dc++;
+  function renderCal() {
+    var yr = calViewDate.getFullYear();
+    var mo = calViewDate.getMonth();
+    var today = new Date();
+    var fd = new Date(yr, mo, 1).getDay();
+    var dim = new Date(yr, mo + 1, 0).getDate();
+    var prevDays = new Date(yr, mo, 0).getDate();
+    var evs = filtered();
+    var dm = {};
+    for (var i = 0; i < evs.length; i++) {
+      var d = pd(evs[i].start);
+      if (d.getFullYear() === yr && d.getMonth() === mo) {
+        var day = d.getDate();
+        if (!dm[day]) dm[day] = [];
+        dm[day].push(evs[i]);
       }
     }
-    html+='</tr>';
-    if(dc>dim&&r>=3) break;
+    var html = '';
+    var dc = 1, nc = 1;
+    for (var row = 0; row < 6; row++) {
+      html += '<tr>';
+      for (var col = 0; col < 7; col++) {
+        var ci = row * 7 + col;
+        if (ci < fd) {
+          html += '<td class="other-month"><span class="cal-day-num">' + (prevDays - fd + ci + 1) + '</span></td>';
+        } else if (dc > dim) {
+          html += '<td class="other-month"><span class="cal-day-num">' + (nc++) + '</span></td>';
+        } else {
+          var isToday = yr === today.getFullYear() && mo === today.getMonth() && dc === today.getDate();
+          var cellEvs = dm[dc] || [];
+          var eh = '';
+          for (var k = 0; k < Math.min(cellEvs.length, 2); k++) {
+            var ce = cellEvs[k];
+            var cc = ORG_COLORS[ce._org] || '#7a7065';
+            eh += '<span class="cal-event-dot" style="background:' + cc + '" data-cal-ev="' + encodeURIComponent(JSON.stringify(ce)) + '">' + ce.summary + '</span>';
+          }
+          if (cellEvs.length > 2) eh += '<span class="cal-more">+' + (cellEvs.length - 2) + ' more</span>';
+          html += '<td class="' + (isToday ? 'today' : '') + '"><span class="cal-day-num">' + dc + '</span>' + eh + '</td>';
+          dc++;
+        }
+      }
+      html += '</tr>';
+      if (dc > dim && row >= 3) break;
+    }
+    var tbody = document.getElementById('calBody');
+    if (tbody) {
+      tbody.innerHTML = html;
+      // Attach cal dot click handlers
+      var dots = tbody.querySelectorAll('.cal-event-dot');
+      for (var m = 0; m < dots.length; m++) {
+        (function(dot) {
+          dot.addEventListener('click', function() {
+            try {
+              var ev = JSON.parse(decodeURIComponent(dot.getAttribute('data-cal-ev')));
+              openModal(ev);
+            } catch(e) {}
+          });
+        })(dots[m]);
+      }
+    }
   }
-  document.getElementById('calBody').innerHTML=html;
-}
 
-function setFilter(org,el){
-  activeFilter=org;
-  document.querySelectorAll('.filter-chip').forEach(c=>c.classList.remove('active'));
-  el.classList.add('active');
-  render();
-}
-function switchTab(tab,btn){
-  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  document.getElementById('tab-list').style.display=tab==='list'?'block':'none';
-  document.getElementById('tab-calendar').style.display=tab==='calendar'?'block':'none';
-}
-function toggleAdmin(){ document.getElementById('adminPanel').classList.toggle('open'); }
+  // ── MODAL ──────────────────────────────────────────────────────────────────
+  function openModal(e) {
+    var d = pd(e.start);
+    var color = ORG_COLORS[e._org] || '#7a7065';
+    document.getElementById('modalOrg').textContent = e._org;
+    document.getElementById('modalOrg').style.background = color;
+    document.getElementById('modalTitle').textContent = e.summary;
+    document.getElementById('modalDate').textContent = d.toLocaleDateString('en-US', {weekday:'long', year:'numeric', month:'long', day:'numeric'});
+    document.getElementById('modalTime').textContent = e.start.dateTime ? ft(pd(e.start)) : 'All day';
+    var lw = document.getElementById('modalLocWrap');
+    if (e.location) { document.getElementById('modalLoc').textContent = e.location; lw.style.display = 'flex'; }
+    else { lw.style.display = 'none'; }
+    var de = document.getElementById('modalDesc');
+    de.textContent = e.description || '';
+    de.style.display = e.description ? 'block' : 'none';
+    var lk = document.getElementById('modalLink');
+    if (e.htmlLink) { lk.href = e.htmlLink; lk.style.display = 'inline-block'; }
+    else { lk.style.display = 'none'; }
+    document.getElementById('modalGcal').href = gcalUrl(e);
+    document.getElementById('modal').classList.add('open');
+  }
 
-function addEvent(){
-  const title=document.getElementById('f-title').value.trim(), org=document.getElementById('f-org').value;
-  const date=document.getElementById('f-date').value, time=document.getElementById('f-time').value.trim();
-  const loc=document.getElementById('f-loc').value.trim(), url=document.getElementById('f-url').value.trim();
-  const desc=document.getElementById('f-desc').value.trim();
-  if(!title||!date){alert('Please fill in at least a title and date.');return;}
-  const ev={id:'c-'+Date.now(),summary:title,_org:org,start:{dateTime:date+'T00:00:00'},
-    location:loc||undefined,description:(desc||'')+(time?'\nTime: '+time:''),htmlLink:url||undefined};
-  customEvents.push(ev);
-  try{localStorage.setItem('delco_custom_events',JSON.stringify(customEvents));}catch(e){}
-  ['f-title','f-date','f-time','f-loc','f-url','f-desc'].forEach(id=>document.getElementById(id).value='');
-  const s=document.getElementById('adminSuccess'); s.style.display='block'; setTimeout(()=>s.style.display='none',3000);
-  render();
-}
+  function closeModal(ev) {
+    if (!ev || ev.target === document.getElementById('modal') || (ev.target && ev.target.classList.contains('modal-close'))) {
+      document.getElementById('modal').classList.remove('open');
+    }
+  }
 
-// Build Google Calendar URL
-function gcalUrl(e) {
-  const start = pd(e.start);
-  const end = e.end ? pd(e.end) : new Date(start.getTime() + 60*60*1000);
-  const fmt = d => d.toISOString().replace(/[-:]/g,'').split('.')[0]+'Z';
-  const params = new URLSearchParams({
-    action: 'TEMPLATE',
-    text: e.summary,
-    dates: fmt(start)+'/'+fmt(end),
-    details: (e.description||'')+(e.htmlLink?'\n\nMore info: '+e.htmlLink:''),
-    location: e.location||''
-  });
-  return 'https://calendar.google.com/calendar/render?'+params.toString();
-}
+  // ── GOOGLE CALENDAR URL ────────────────────────────────────────────────────
+  function gcalUrl(e) {
+    var start = pd(e.start);
+    var end = e.end && (e.end.dateTime || e.end.date) ? pd(e.end) : new Date(start.getTime() + 3600000);
+    function fmt(dt) { return dt.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z'; }
+    var desc = (e.description || '') + (e.htmlLink ? '\n\nMore info: ' + e.htmlLink : '');
+    return 'https://calendar.google.com/calendar/render?action=TEMPLATE' +
+      '&text=' + encodeURIComponent(e.summary) +
+      '&dates=' + fmt(start) + '/' + fmt(end) +
+      '&details=' + encodeURIComponent(desc) +
+      '&location=' + encodeURIComponent(e.location || '');
+  }
 
-function openModal(encoded) {
-  const e = JSON.parse(decodeURIComponent(encoded));
-  const d = pd(e.start), color = ORG_COLORS[e._org]||'#7a7065';
-  document.getElementById('modalOrg').textContent = e._org;
-  document.getElementById('modalOrg').style.background = color;
-  document.getElementById('modalTitle').textContent = e.summary;
-  document.getElementById('modalDate').textContent = d.toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
-  document.getElementById('modalTime').textContent = e.start.dateTime ? ft(pd(e.start)) : 'All day';
-  const lw = document.getElementById('modalLocWrap');
-  if(e.location){document.getElementById('modalLoc').textContent=e.location;lw.style.display='flex';}else lw.style.display='none';
-  const de=document.getElementById('modalDesc');
-  de.innerHTML=e.description?e.description.replace(/\n/g,'<br>'):''; de.style.display=e.description?'block':'none';
-  const lk=document.getElementById('modalLink');
-  if(e.htmlLink){lk.href=e.htmlLink;lk.style.display='inline-block';}else lk.style.display='none';
-  // Google Calendar button
-  document.getElementById('modalGcal').href = gcalUrl(e);
-  document.getElementById('modal').classList.add('open');
-}
-function closeModal(ev){
-  if(!ev||ev.target===document.getElementById('modal')||ev.target.classList.contains('modal-close'))
-    document.getElementById('modal').classList.remove('open');
-}
+  // ── FILTER + TABS ──────────────────────────────────────────────────────────
+  function setFilter(org, el) {
+    activeFilter = org;
+    var chips = document.querySelectorAll('.filter-chip');
+    for (var i = 0; i < chips.length; i++) chips[i].classList.remove('active');
+    el.classList.add('active');
+    render();
+  }
 
-function pd(d){ return new Date(d.dateTime||d.date); }
-function ft(d){ return d.toL
+  function switchTab(tab, btn) {
+    var btns = document.querySelectorAll('.tab-btn');
+    for (var i = 0; i < btns.length; i++) btns[i].classList.remove('active');
+    btn.classList.add('active');
+    document.getElementById('tab-list').style.display = tab === 'list' ? 'block' : 'none';
+    document.getElementById('tab-calendar').style.display = tab === 'calendar' ? 'block' : 'none';
+  }
+
+  function toggleAdmin() {
+    document.getElementById('adminPanel').classList.toggle('open');
+  }
+
+  // ── ADD EVENT ──────────────────────────────────────────────────────────────
+  function addEvent() {
+    var title = document.getElementById('f-title').value.trim();
+    var org = document.getElementById('f-org').value;
+    var date = document.getElementById('f-date').value;
+    var time = document.getElementById('f-time').value.trim();
+    var loc = document.getElementById('f-loc').value.trim();
+    var url = document.getElementById('f-url').value.trim();
+    var desc = document.getElementById('f-desc').value.trim();
+    if (!title || !date) { alert('Please fill in at least a title and date.'); return; }
+    var ev = {
+      id: 'c-' + Date.now(),
+      summary: title,
+      _org: org,
+      start: { dateTime: date + 'T00:00:00' },
+      location: loc || undefined,
+      description: desc + (time ? '\nTime: ' + time : ''),
+      htmlLink: url || undefined
+    };
+    customEvents.push(ev);
+    try { localStorage.setItem('delco_custom_events', JSON.stringify(customEvents)); } catch(e) {}
+    ['f-title','f-date','f-time','f-loc','f-url','f-desc'].forEach(function(id) {
+      document.getElementById(id).value = '';
+    });
+    var s = document.getElementById('adminSuccess');
+    s.style.display = 'block';
+    setTimeout(function() { s.style.display = 'none'; }, 3000);
+    render();
+  }
+
+  // ── HELPERS ────────────────────────────────────────────────────────────────
+  function pd(d) { return new Date(d.dateTime || d.date); }
+  function ft(d) { return d.toLocaleTimeString('en-US', {hour:'numeric', minute:'2-digit'}); }
+  function render() { renderList(); renderCal(); }
+
+  // ── EXPOSE GLOBALS for onclick handlers ───────────────────────────────────
+  window.setFilter = setFilter;
+  window.switchTab = switchTab;
+  window.toggleAdmin = toggleAdmin;
+  window.addEvent = addEvent;
+  window.closeModal = closeModal;
+  window.changeMonth = changeMonth;
+
+  // ── INIT ──────────────────────────────────────────────────────────────�
