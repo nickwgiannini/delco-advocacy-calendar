@@ -1,35 +1,7 @@
 {
-  "updated": "2026-03-28T11:20:10.904943",
-  "count": 78,
+  "updated": "2026-03-29T11:20:59.474504",
+  "count": 76,
   "events": [
-    {
-      "id": "nk-springfield-2026-03-28",
-      "_org": "No Kings",
-      "summary": "No Kings: Springfield \u2013 Weekly Saturday Demo",
-      "start": {
-        "dateTime": "2026-03-28T13:00:00"
-      },
-      "end": {
-        "dateTime": "2026-03-28T14:00:00"
-      },
-      "location": "Springfield Mall, 1198 Baltimore Pike, Springfield, PA",
-      "description": "Weekly demonstration against the Trump administration. Every Saturday, rain or shine.",
-      "htmlLink": "https://www.mobilize.us/delcoindivisible/",
-      "recurring": "Every Saturday 1\u20132pm"
-    },
-    {
-      "id": "di-site-4848019093097571935",
-      "_org": "DELCO Indivisible",
-      "summary": "Sat, MAR 28th",
-      "start": {
-        "dateTime": "2026-03-28T19:00:00"
-      },
-      "end": {},
-      "location": "Media VFW Post, 11 Hilltop Rd, Media, PA",
-      "description": "",
-      "htmlLink": "https://delcoindivisible.org/",
-      "recurring": ""
-    },
     {
       "id": "cc-p-2026-04-01",
       "_org": "County Council",
@@ -181,7 +153,7 @@
       "recurring": "Every Saturday 1\u20132pm"
     },
     {
-      "id": "di-site--7666045296014151319",
+      "id": "di-site--1846197170345724033",
       "_org": "DELCO Indivisible",
       "summary": "MoN, ApR 20th",
       "start": {
