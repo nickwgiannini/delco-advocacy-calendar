@@ -1,29 +1,35 @@
 name: Fetch Delco News Feed
-
+ 
 on:
   schedule:
     - cron: "0 */6 * * *"   # every 6 hours
   workflow_dispatch:          # manual trigger from GitHub UI
-
+ 
+permissions:
+  contents: write
+ 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+ 
 jobs:
   fetch:
     runs-on: ubuntu-latest
-
+ 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-
+ 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
+ 
       - name: Install dependencies
         run: pip install feedparser
-
+ 
       - name: Run news scraper
         run: python scraper/fetch_news.py
-
+ 
       - name: Commit and push news.json
         run: |
           git config user.name "github-actions[bot]"
