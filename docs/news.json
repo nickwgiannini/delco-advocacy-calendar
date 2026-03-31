@@ -1,7 +1,71 @@
 {
-  "updated": "2026-03-31T12:52:16.939851+00:00",
-  "count": 63,
+  "updated": "2026-03-31T18:45:44.737513+00:00",
+  "count": 61,
   "articles": [
+    {
+      "title": "As gas spikes to an average $4 a gallon, Hegseth says Iran ground war still an option",
+      "summary": "As of Wednesday afternoon, the average cost of a gallon of regular gas in Pennsylvania is below the national average at $3.97, according to AAA. That's up only two cents from a week ago.",
+      "url": "https://penncapital-star.com/2026/03/31/repub/as-gas-spikes-to-an-average-4-a-gallon-hegseth-says-iran-ground-war-still-an-option/",
+      "source": "Capital-Star",
+      "cat": "pa",
+      "date": "2026-03-31T18:26:57+00:00"
+    },
+    {
+      "title": "FIRST LOOK: Hulu's new anti-rom-com starring Jemaine Clement and Nicola Walker",
+      "summary": "Hulu reveals first look at \"Alice and Steve,\" a new comedy where dating a best friend's daughter sparks chaos, revenge and a brutal fallout",
+      "url": "https://abc7.com/post/first-look-hulus-new-anti-rom-alice-steveturnsfriendshipinto-feud/18816763/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-03-31T18:22:14+00:00"
+    },
+    {
+      "title": "Intoxicated man carjacked tow truck and hit 2 vehicles in Gloucester County, police say",
+      "summary": "A Gloucester County man was arrested for suspected DWI after police say he carjacked a tow truck and crashed head-on into two vehicles.",
+      "url": "https://6abc.com/post/intoxicated-man-carjacked-tow-truck-hit-2-vehicles-washington-township-new-jersey-police-say/18815267/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-03-31T16:40:09+00:00"
+    },
+    {
+      "title": "States pass laws allowing pregnancy centers to evade regulation and countersue for damages",
+      "summary": "The moves allow them to sue for damages if any part of the law is violated.",
+      "url": "https://penncapital-star.com/2026/03/31/repub/states-pass-laws-allowing-pregnancy-centers-to-evade-regulation-and-countersue-for-damages/",
+      "source": "Capital-Star",
+      "cat": "pa",
+      "date": "2026-03-31T16:28:16+00:00"
+    },
+    {
+      "title": "Trump’s hunt for undocumented Medicaid enrollees in Pa. and other states yields few violators",
+      "summary": "Spokespeople from Pennsylvania’s and Colorado’s Medicaid agencies said, as of March, the states had found no one who needed to be terminated from Medicaid.",
+      "url": "https://penncapital-star.com/health/trumps-hunt-for-undocumented-medicaid-enrollees-in-pa-and-other-states-yields-few-violators/",
+      "source": "Capital-Star",
+      "cat": "pa",
+      "date": "2026-03-31T16:00:30+00:00"
+    },
+    {
+      "title": "Some PECO workers could strike soon as union contract expires",
+      "summary": "IBEW Local 614 represents about 1,500 PECO employees who work as linemen, gas technicians, mechanics, call center workers and back office workers.",
+      "url": "https://6abc.com/post/peco-workers-could-strike-soon-ibew-local-614-contract-set-expire/18812618/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-03-31T15:35:43+00:00"
+    },
+    {
+      "title": "As Shapiro opposes ICE detention centers, his GOP opponent for Pa. governor stays vague",
+      "summary": "HARRISBURG — Stacy Garrity’s gubernatorial campaign won’t clarify where the Republican stands on ICE detention centers, only saying the proposals in Pennsylvania “warrant serious review” and that sitt…",
+      "url": "https://www.spotlightpa.org/news/2026/03/stacy-garrity-ice-immigration-detention-facilities-schuylkill-berks-shapiro-governor-election-2026-elections-federal-government/",
+      "source": "Spotlight PA",
+      "cat": "pa",
+      "date": "2026-03-31T14:28:43+00:00"
+    },
+    {
+      "title": "Police ID 2 men killed in West Philadelphia shooting that left 3 others injured",
+      "summary": "A quintuple shooting in West Philadelphia left at least two people dead Monday night, according to police.",
+      "url": "https://6abc.com/post/west-philadelphia-shooting-leaves-2-dead-3-injured-60th-delancy/18812329/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-03-31T14:26:23+00:00"
+    },
     {
       "title": "Pothole squads; Rental protection; Worker tax credit | Morning Roundup",
       "summary": "#BILLYPENNGRAM OF THE DAY Art is all around us(Photo by @thetinybun) Parker&#8217;s &#8216;pothole squads&#8217; would be funded by delivery tax As grumbling peaked last month over Philly’s bumper cro…",
@@ -9,14 +73,6 @@
       "source": "Billy Penn",
       "cat": "regional",
       "date": "2026-03-31T11:45:00+00:00"
-    },
-    {
-      "title": "5 people shot, 2 killed in West Philadelphia",
-      "summary": "A quintuple shooting in West Philadelphia left at least two people dead Monday night, according to police.",
-      "url": "https://6abc.com/post/west-philadelphia-shooting-leaves-2-dead-3-injured-60th-delancy/18812329/",
-      "source": "6abc",
-      "cat": "regional",
-      "date": "2026-03-31T11:43:25+00:00"
     },
     {
       "title": "No more diapers or sweeping punishments: How Philly parents helped guarantee student bathroom breaks",
@@ -35,14 +91,6 @@
       "date": "2026-03-31T10:35:03+00:00"
     },
     {
-      "title": "Some PECO workers could strike soon as union contract expires",
-      "summary": "IBEW Local 614 represents about 1,500 PECO employees who work as linemen, gas technicians, mechanics, call center workers and back office workers.",
-      "url": "https://6abc.com/post/peco-workers-could-strike-soon-ibew-local-614-contract-set-expire/18812618/",
-      "source": "6abc",
-      "cat": "regional",
-      "date": "2026-03-31T10:03:01+00:00"
-    },
-    {
       "title": "Mayor Parker’s ‘pothole squads’ would be funded by proposed 25-cent delivery tax",
       "summary": "Love Philly? So do we. Let’s be friends. Sign up for the Billy Penn newsletter today. As grumbling peaked last month over Philly’s bumper crop of seasonal potholes, Mayor Cherelle Parker [&#8230;] The…",
       "url": "https://billypenn.com/2026/03/31/philadelphia-retail-delivery-tax-potholes-disabled/",
@@ -57,38 +105,6 @@
       "source": "6abc",
       "cat": "regional",
       "date": "2026-03-31T04:09:37+00:00"
-    },
-    {
-      "title": "Bicyclist hit and killed in Deptford Township, NJ",
-      "summary": "Police in South Jersey are investigating a deadly crash that killed a bicyclist Monday night in Deptford Township, Gloucester County.",
-      "url": "https://6abc.com/post/bicyclist-hit-killed-delsea-drive-brenner-avenue-deptford-township-nj/18812871/",
-      "source": "6abc",
-      "cat": "regional",
-      "date": "2026-03-31T03:46:40+00:00"
-    },
-    {
-      "title": "Deptford Twp. police seek help identifying bus driver assault suspect",
-      "summary": "Police in Deptford Township are asking for the public's help in identifying a suspect wanted in the alleged assault of an NJ Transit bus driver.",
-      "url": "https://6abc.com/post/deptford-twp-police-seek-help-identifying-bus-driver-assault-suspect/18811201/",
-      "source": "6abc",
-      "cat": "regional",
-      "date": "2026-03-31T02:35:33+00:00"
-    },
-    {
-      "title": "TSA officers receive their 1st paychecks in weeks as staffing strain continues",
-      "summary": "At Philadelphia International Airport, about 15% of TSA workers called out Monday, according to union officials, a figure that's down from roughly 25% over the weekend.",
-      "url": "https://6abc.com/post/tsa-union-warns-continued-staffing-strain-first-paycheck-weeks-arrives-monday/18805229/",
-      "source": "6abc",
-      "cat": "regional",
-      "date": "2026-03-31T00:32:08+00:00"
-    },
-    {
-      "title": "NJ crews contain multiple wildfires in Ocean County",
-      "summary": "The New Jersey Forest Fire Service has contained multiple wildfires burning in Ocean County.",
-      "url": "https://6abc.com/post/smoke-rises-rt-195-due-wildfire-jackson-township-nj/18810565/",
-      "source": "6abc",
-      "cat": "regional",
-      "date": "2026-03-30T23:59:47+00:00"
     },
     {
       "title": "With $4.5B on the line, Pennsylvania businesses seek tariff refunds",
@@ -339,36 +355,12 @@
       "date": "2026-03-26T19:58:04+00:00"
     },
     {
-      "title": "Bipartisan US senators want investigation into farm equipment companies moving jobs to Mexico",
-      "summary": "John Deere, Caterpillar and the Wisconsin-based Case New Holland had all laid off U.S. workers in recent years while moving manufacturing jobs to Mexico.",
-      "url": "https://penncapital-star.com/2026/03/26/repub/bipartisan-us-senators-want-investigation-into-farm-equipment-companies-moving-jobs-to-mexico/",
-      "source": "Capital-Star",
-      "cat": "pa",
-      "date": "2026-03-26T19:56:42+00:00"
-    },
-    {
-      "title": "US Senate turns down photo ID requirement for voting, slammed by Dems as ‘theatrics’",
-      "summary": "The chamber debated a larger bill that would make several changes to how Americans register and cast ballots.",
-      "url": "https://penncapital-star.com/2026/03/26/repub/us-senate-turns-down-photo-id-requirement-for-voting-slammed-by-dems-as-theatrics/",
-      "source": "Capital-Star",
-      "cat": "pa",
-      "date": "2026-03-26T18:04:42+00:00"
-    },
-    {
       "title": "Booklight PA: An intimate look at small-town, Appalachian life in ‘Sidle Creek’",
       "summary": "From dive bars and diners to town halls and bait shops, Jolene McIlwain’s Sidle Creek paints an intimate picture of western Pennsylvania’s Appalachian hills. The short story collection “interrogates t…",
       "url": "https://www.spotlightpa.org/news/2026/03/jolene-mcilwain-sidle-creek-book-club-appalachian-pennsylvania-events/",
       "source": "Spotlight PA",
       "cat": "pa",
       "date": "2026-03-26T17:09:27+00:00"
-    },
-    {
-      "title": "New census estimates show movers swelling population in small Southeast counties",
-      "summary": "Four of the seven counties with the largest numeric increases had population growth that was largely driven by immigration.",
-      "url": "https://penncapital-star.com/2026/03/26/repub/new-census-estimates-show-movers-swelling-population-in-small-southeast-counties/",
-      "source": "Capital-Star",
-      "cat": "pa",
-      "date": "2026-03-26T16:00:13+00:00"
     },
     {
       "title": "Great PA News Quiz: Rules for AI in elections, and a record-setting line of cheesesteaks",
@@ -497,14 +489,6 @@
       "source": "Spotlight PA",
       "cat": "pa",
       "date": "2026-03-19T08:00:00+00:00"
-    },
-    {
-      "title": "Berks officials grappling with ICE's warehouse plans want assurances from the feds",
-      "summary": "UPPER BERN — Local officials say they are working to ensure Berks County taxpayers aren’t on the hook for outstanding issues with a warehouse purchased by ICE. The developer says it’s unclear whether…",
-      "url": "https://www.spotlightpa.org/berks/2026/03/ice-detention-center-pennsylvania-taxpayer-costs-berks-schuylkill-federal-government/",
-      "source": "Spotlight PA",
-      "cat": "pa",
-      "date": "2026-03-18T16:37:26+00:00"
     }
   ]
 }
