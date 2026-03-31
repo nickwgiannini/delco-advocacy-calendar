@@ -1,38 +1,94 @@
 {
-  "updated": "2026-03-30T18:45:04.433263+00:00",
-  "count": 58,
+  "updated": "2026-03-31T01:18:59.503589+00:00",
+  "count": 61,
   "articles": [
     {
-      "title": "Pro-Palestinian activist speaks out after foiled New York City assassination plot",
-      "summary": "The pro-Palestinian activist who was the target of an assassination plot thwarted by law enforcement spoke out for the first time on Monday since police arrested a suspect.",
-      "url": "https://abc7chicago.com/post/pro-palestinian-activist-nerdeen-kiswani-speaks-foiled-nyc-assassination-plot-alexander-heifler-arrested/18809775/",
+      "title": "TSA officers receive their 1st paychecks in weeks as staffing strain continues",
+      "summary": "At Philadelphia International Airport, about 15% of TSA workers called out Monday, according to union officials, a figure that's down from roughly 25% over the weekend.",
+      "url": "https://6abc.com/post/tsa-union-warns-continued-staffing-strain-first-paycheck-weeks-arrives-monday/18805229/",
       "source": "6abc",
       "cat": "regional",
-      "date": "2026-03-30T18:09:19+00:00"
+      "date": "2026-03-31T00:32:08+00:00"
     },
     {
-      "title": "Judge dismisses charges against two ex-Louisville police officers in Breonna Taylor case",
-      "summary": "A federal judge has dismissed charges against two former Louisville police officers who were accused of falsifying the warrant used to enter Breonna Taylor's apartment the night police shot her to dea…",
-      "url": "https://abc7.com/post/judge-dismisses-charges-ex-louisville-police-officers-breonna-taylor-shooting-case/18809625/",
+      "title": "NJ crews contain multiple wildfires in Ocean County",
+      "summary": "The New Jersey Forest Fire Service has contained multiple wildfires burning in Ocean County.",
+      "url": "https://6abc.com/post/smoke-rises-rt-195-due-wildfire-jackson-township-nj/18810565/",
       "source": "6abc",
       "cat": "regional",
-      "date": "2026-03-30T17:28:47+00:00"
+      "date": "2026-03-30T23:59:47+00:00"
     },
     {
-      "title": "Variety of sips line shelves at The Bottle Shop in East Passyunk",
-      "summary": "The Bottle Shop is a neighborhood spot owned by Gena Montebello and Michele Ganas. The store is a combination bar and carryout shop with an extensive selection of beer and wine, including organic and…",
-      "url": "https://6abc.com/post/variety-sips-line-shelves-bottle-shop-east-passyunk/18769356/",
+      "title": "Student shoots teacher at high school near San Antonio, Comal County Sheriff's Office says",
+      "summary": "The student, identified as a 15-year-old boy, died at the scene, officials said. Authorities said the high school will remain on lockdown while an investigation continues.",
+      "url": "https://abc13.com/post/student-shoots-teacher-high-school-san-antonio-comal-county-sheriffs-office-says/18809684/",
       "source": "6abc",
       "cat": "regional",
-      "date": "2026-03-30T16:41:41+00:00"
+      "date": "2026-03-30T23:11:40+00:00"
     },
     {
-      "title": "Delmarva Power looking to raise monthly rates for customers starting this summer",
-      "summary": "A utility filing with the Delaware Service Commission says customers could see a roughly 9% increase.",
-      "url": "https://6abc.com/post/delmarva-power-looking-raise-monthly-rates-customers-starting-summer/18808361/",
+      "title": "Deptford Twp. police seek help identifying bus driver assault suspect",
+      "summary": "Police in Deptford Township are asking for the public's help in identifying a suspect wanted in the alleged assault of an NJ Transit bus driver.",
+      "url": "https://6abc.com/post/deptford-twp-police-seek-help-identifying-bus-driver-assault-suspect/18811201/",
       "source": "6abc",
       "cat": "regional",
-      "date": "2026-03-30T16:15:11+00:00"
+      "date": "2026-03-30T23:10:57+00:00"
+    },
+    {
+      "title": "With $4.5B on the line, Pennsylvania businesses seek tariff refunds",
+      "summary": "a coalition of more than 1,100 small businesses, including Bunyaad Marketplace and 42 others in Pennsylvania — reported that companies in the commonwealth had paid $4.5 billion in “illegal” tariffs ne…",
+      "url": "https://penncapital-star.com/economy/with-4-5b-on-the-line-pa-businesses-seek-tariff-refunds/",
+      "source": "Capital-Star",
+      "cat": "pa",
+      "date": "2026-03-30T22:08:11+00:00"
+    },
+    {
+      "title": "Boil water advisory lifted after main breaks in Upper Chichester Township",
+      "summary": "The break, which occurred during a construction project, caused service disruptions and reduced water pressure in nearby homes.",
+      "url": "https://6abc.com/post/water-main-repaired-boil-advisory-remains-effect-upper-chichester-township/18802404/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-03-30T21:31:55+00:00"
+    },
+    {
+      "title": "Emergency alert sent as police move to shut down unpermitted event in Bridgeport, NJ",
+      "summary": "A music and car event caught officials and police by surprise on Sunday in Bridgeport, Gloucester County.",
+      "url": "https://6abc.com/post/emergency-alert-sent-police-move-shut-down-unpermitted-event-bridgeport-new-jersey/18810287/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-03-30T21:26:49+00:00"
+    },
+    {
+      "title": "Borough council president charged with fuel theft",
+      "summary": "According to a criminal complaint, Dominic Capobianco used the borough's gas card to fill his personal vehicle as well as a portable red gas can.",
+      "url": "https://6abc.com/post/parkside-borough-council-president-dominic-capobianco-charged-using-gas-card-personal-use/18810895/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-03-30T21:24:50+00:00"
+    },
+    {
+      "title": "TSA officers finally get paid amid ongoing Homeland Security shutdown",
+      "summary": "The lack of pay had produced long wait lines for security checks at some of the nation’s busiest airports after TSA officers quit or called out sick.",
+      "url": "https://penncapital-star.com/2026/03/30/repub/tsa-officers-finally-get-paid-amid-ongoing-homeland-security-shutdown/",
+      "source": "Capital-Star",
+      "cat": "pa",
+      "date": "2026-03-30T20:41:08+00:00"
+    },
+    {
+      "title": "Participants in Jan. 6 US Capitol riot, including some from Pa., file lawsuit in Florida against DC police",
+      "summary": "Another plaintiff is Craig Bingert of Allentown, Pa. According to a statement from the U.S. Department of Justice, Bingert and others grabbed a metal bike rack that the police were using as a barricad…",
+      "url": "https://penncapital-star.com/2026/03/30/repub/participants-in-jan-6-us-capitol-riot-including-some-from-pa-file-lawsuit-in-florida-against-dc-police/",
+      "source": "Capital-Star",
+      "cat": "pa",
+      "date": "2026-03-30T19:36:51+00:00"
+    },
+    {
+      "title": "New federal data reinforces nationwide drop in crime since pandemic peak",
+      "summary": "Nationally, the rate of violent offenses reported to police declined 5.8% in 2024.",
+      "url": "https://penncapital-star.com/2026/03/30/repub/new-federal-data-reinforces-nationwide-drop-in-crime-since-pandemic-peak/",
+      "source": "Capital-Star",
+      "cat": "pa",
+      "date": "2026-03-30T18:47:49+00:00"
     },
     {
       "title": "Pedestrian deaths saw largest recorded drop in early 2025",
@@ -57,6 +113,14 @@
       "source": "Capital-Star",
       "cat": "pa",
       "date": "2026-03-30T14:00:51+00:00"
+    },
+    {
+      "title": "Drexel intergenerational housing; Toenail art; Utility cost savings tips | Morning Roundup",
+      "summary": "#BILLYPENNGRAM OF THE DAY To cone or not to cone (Photo by @_marcphilly_) Drexel students and older adults pair up as unconventional roommates This unlikely living arrangement is part of a growing [&#…",
+      "url": "https://billypenn.com/2026/03/30/drexel-affordable-housing-intergenerational-philly-toenail-artist-morning-roundup/",
+      "source": "Billy Penn",
+      "cat": "regional",
+      "date": "2026-03-30T12:00:00+00:00"
     },
     {
       "title": "How Trump’s expansion of federal power threatens states’ authority",
@@ -307,14 +371,6 @@
       "date": "2026-03-26T11:50:54+00:00"
     },
     {
-      "title": "As No Kings protests grow, a bigger question looms: What comes next?",
-      "summary": "Organizers expect millions of people to turn out for this third round of No Kings demonstrations, with more than 3,000 local-level events mapped on the movement’s official website, including dozens ac…",
-      "url": "https://penncapital-star.com/2026/03/26/repub/as-no-kings-protests-grow-a-bigger-question-looms-what-comes-next/",
-      "source": "Capital-Star",
-      "cat": "pa",
-      "date": "2026-03-26T11:22:04+00:00"
-    },
-    {
       "title": "Automatic voter registration is getting more Pennsylvanians on the rolls, but they don’t always vote",
       "summary": "This article is made possible through Spotlight PA’s collaboration with Votebeat , a nonpartisan news organization covering local election administration and voting. Sign up for Votebeat's free newsle…",
       "url": "https://www.spotlightpa.org/news/2026/03/automatic-voter-registration-analysis-rural-counties-low-turnout-pennsylvania-elections/",
@@ -329,38 +385,6 @@
       "source": "Spotlight PA",
       "cat": "pa",
       "date": "2026-03-26T09:00:00+00:00"
-    },
-    {
-      "title": "Punishment handed down to Lancaster County teens who made AI-generated nude photos of classmates",
-      "summary": "A judge sentenced two teenagers in Lancaster County to probation and community service — along with restitution — after they used artificial intelligence to generate nude images of female classmates a…",
-      "url": "https://penncapital-star.com/briefs/punishment-handed-down-to-lancaster-county-teens-who-made-ai-generated-nude-photos-of-classmates/",
-      "source": "Capital-Star",
-      "cat": "pa",
-      "date": "2026-03-25T20:24:02+00:00"
-    },
-    {
-      "title": "Trump EPA to ease restrictions on summer ethanol-blend sales as gas prices soar",
-      "summary": "The blend, known as E15, is usually barred in many Midwest states over the summer to reduce smog.",
-      "url": "https://penncapital-star.com/2026/03/25/repub/trump-epa-to-ease-restrictions-on-summer-ethanol-blend-sales-as-gas-prices-soar/",
-      "source": "Capital-Star",
-      "cat": "pa",
-      "date": "2026-03-25T20:18:30+00:00"
-    },
-    {
-      "title": "Pa. home health care workers encouraged by signs of Republican support",
-      "summary": "This story was updated on March 25, 2026 at 5:05 p.m. with information from the state Department of Human Services. Letters from 70 Democratic lawmakers earlier this year urged Gov. Josh Shapiro to ra…",
-      "url": "https://penncapital-star.com/health-care/pa-home-health-care-workers-encouraged-by-signs-of-republican-support/",
-      "source": "Capital-Star",
-      "cat": "pa",
-      "date": "2026-03-25T19:43:59+00:00"
-    },
-    {
-      "title": "SEPTA real-time displays; Courts ban AI glasses; Weekly gun violence brief | Morning Roundup",
-      "summary": "#BILLYPENNGRAM OF THE DAY Willows on Pier 68(Photo by @postcardsfromsouthphilly) SEPTA pilot will bring real-time data to bus and trolley stops Real-time SEPTA arrival data will arrive at 10 bus and […",
-      "url": "https://billypenn.com/2026/03/25/septa-real-time-bus-trolley-philadelphia-courts-ban-ai-glasses-weekly-gun-violence-brief-morning-roundup/",
-      "source": "Billy Penn",
-      "cat": "regional",
-      "date": "2026-03-25T11:45:00+00:00"
     },
     {
       "title": "Even more of Pa.’s broadband funding will go to satellite after last-minute cost-cutting",
