@@ -1,7 +1,47 @@
 {
-  "updated": "2026-03-31T01:18:59.503589+00:00",
-  "count": 61,
+  "updated": "2026-03-31T07:01:15.041068+00:00",
+  "count": 62,
   "articles": [
+    {
+      "title": "Borough council president charged with fuel theft",
+      "summary": "According to a criminal complaint, Dominic Capobianco used the borough's gas card to fill his personal vehicle as well as a portable red gas can.",
+      "url": "https://6abc.com/post/parkside-borough-council-president-dominic-capobianco-charged-using-gas-card-personal-use/18810895/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-03-31T04:09:37+00:00"
+    },
+    {
+      "title": "Bicyclist hit and killed in Deptford Township, NJ",
+      "summary": "Police in South Jersey are investigating a deadly crash that killed a bicyclist Monday night in Deptford Township, Gloucester County.",
+      "url": "https://6abc.com/post/bicyclist-hit-killed-delsea-drive-brenner-avenue-deptford-township-nj/18812871/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-03-31T03:46:40+00:00"
+    },
+    {
+      "title": "5 people shot, 2 killed in West Philadelphia",
+      "summary": "A quintuple shooting in West Philadelphia left at least two people dead Monday night, according to police.",
+      "url": "https://6abc.com/post/west-philadelphia-shooting-leaves-2-dead-3-injured-60th-delancy/18812329/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-03-31T03:15:28+00:00"
+    },
+    {
+      "title": "Some PECO workers could strike soon as union contract set to expire",
+      "summary": "IBEW Local 614 represents about 1,500 PECO employees who work as linemen, gas technicians, mechanics, call center workers and back office workers.",
+      "url": "https://6abc.com/post/peco-workers-could-strike-soon-ibew-local-614-contract-set-expire/18812618/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-03-31T02:53:13+00:00"
+    },
+    {
+      "title": "Deptford Twp. police seek help identifying bus driver assault suspect",
+      "summary": "Police in Deptford Township are asking for the public's help in identifying a suspect wanted in the alleged assault of an NJ Transit bus driver.",
+      "url": "https://6abc.com/post/deptford-twp-police-seek-help-identifying-bus-driver-assault-suspect/18811201/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-03-31T02:35:33+00:00"
+    },
     {
       "title": "TSA officers receive their 1st paychecks in weeks as staffing strain continues",
       "summary": "At Philadelphia International Airport, about 15% of TSA workers called out Monday, according to union officials, a figure that's down from roughly 25% over the weekend.",
@@ -27,44 +67,12 @@
       "date": "2026-03-30T23:11:40+00:00"
     },
     {
-      "title": "Deptford Twp. police seek help identifying bus driver assault suspect",
-      "summary": "Police in Deptford Township are asking for the public's help in identifying a suspect wanted in the alleged assault of an NJ Transit bus driver.",
-      "url": "https://6abc.com/post/deptford-twp-police-seek-help-identifying-bus-driver-assault-suspect/18811201/",
-      "source": "6abc",
-      "cat": "regional",
-      "date": "2026-03-30T23:10:57+00:00"
-    },
-    {
       "title": "With $4.5B on the line, Pennsylvania businesses seek tariff refunds",
       "summary": "a coalition of more than 1,100 small businesses, including Bunyaad Marketplace and 42 others in Pennsylvania — reported that companies in the commonwealth had paid $4.5 billion in “illegal” tariffs ne…",
       "url": "https://penncapital-star.com/economy/with-4-5b-on-the-line-pa-businesses-seek-tariff-refunds/",
       "source": "Capital-Star",
       "cat": "pa",
       "date": "2026-03-30T22:08:11+00:00"
-    },
-    {
-      "title": "Boil water advisory lifted after main breaks in Upper Chichester Township",
-      "summary": "The break, which occurred during a construction project, caused service disruptions and reduced water pressure in nearby homes.",
-      "url": "https://6abc.com/post/water-main-repaired-boil-advisory-remains-effect-upper-chichester-township/18802404/",
-      "source": "6abc",
-      "cat": "regional",
-      "date": "2026-03-30T21:31:55+00:00"
-    },
-    {
-      "title": "Emergency alert sent as police move to shut down unpermitted event in Bridgeport, NJ",
-      "summary": "A music and car event caught officials and police by surprise on Sunday in Bridgeport, Gloucester County.",
-      "url": "https://6abc.com/post/emergency-alert-sent-police-move-shut-down-unpermitted-event-bridgeport-new-jersey/18810287/",
-      "source": "6abc",
-      "cat": "regional",
-      "date": "2026-03-30T21:26:49+00:00"
-    },
-    {
-      "title": "Borough council president charged with fuel theft",
-      "summary": "According to a criminal complaint, Dominic Capobianco used the borough's gas card to fill his personal vehicle as well as a portable red gas can.",
-      "url": "https://6abc.com/post/parkside-borough-council-president-dominic-capobianco-charged-using-gas-card-personal-use/18810895/",
-      "source": "6abc",
-      "cat": "regional",
-      "date": "2026-03-30T21:24:50+00:00"
     },
     {
       "title": "TSA officers finally get paid amid ongoing Homeland Security shutdown",
