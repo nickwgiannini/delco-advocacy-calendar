@@ -1,7 +1,55 @@
 {
-  "updated": "2026-04-01T07:08:07.214168+00:00",
-  "count": 63,
+  "updated": "2026-04-01T12:53:42.621421+00:00",
+  "count": 62,
   "articles": [
+    {
+      "title": "The Franklin Fountain in Old City Philadelphia introducing 26 unique ice cream flavors",
+      "summary": "An iconic Philadelphia ice cream parlor is reinventing the sweet treat with the introduction of their first batch of 26 new, experimental flavors.",
+      "url": "https://6abc.com/post/franklin-fountain-old-city-philadelphia-introducing-26-unique-ice-cream-flavors/18816420/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-04-01T12:42:00+00:00"
+    },
+    {
+      "title": "At least 3 people killed as shots fired among large crowd gathered in Chester, Pa.",
+      "summary": "Chester police are investigating an incident that left at least three people dead early Wednesday morning.",
+      "url": "https://6abc.com/post/person-shot-another-stabbed-large-crowd-gathered-high-school-chester-pa/18820751/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-04-01T12:13:16+00:00"
+    },
+    {
+      "title": "Fatal police violence may have declined for the first time in years",
+      "summary": "The findings come as photos and videos of aggressive law enforcement — particularly involving federal immigration agents — have dominated headlines and social media.",
+      "url": "https://penncapital-star.com/2026/04/01/repub/fatal-police-violence-may-have-declined-for-the-first-time-in-years/",
+      "source": "Capital-Star",
+      "cat": "pa",
+      "date": "2026-04-01T12:04:49+00:00"
+    },
+    {
+      "title": "March decline in rents is the largest since before the pandemic",
+      "summary": "Eventually, the pandemic and housing shortages pushed up rents, as more people sought space for themselves and their families in suburbs and the Sun Belt, with year-over-year increases peaking at 18%…",
+      "url": "https://penncapital-star.com/2026/04/01/repub/march-decline-in-rents-is-the-largest-since-before-the-pandemic/",
+      "source": "Capital-Star",
+      "cat": "pa",
+      "date": "2026-04-01T10:16:48+00:00"
+    },
+    {
+      "title": "States sue Trump administration over toxic air rule rollback",
+      "summary": "The regulation, known as the Mercury and Air Toxics Standards rule, limits emissions from coal- and oil-fired power plants. It covers pollutants including mercury, arsenic, lead and other toxic metals…",
+      "url": "https://penncapital-star.com/2026/04/01/repub/states-sue-trump-administration-over-toxic-air-rule-rollback/",
+      "source": "Capital-Star",
+      "cat": "pa",
+      "date": "2026-04-01T08:03:22+00:00"
+    },
+    {
+      "title": "Pa.'s first-ever investment in public defense allowed offices to hire attorneys, improve case management",
+      "summary": "Pennsylvania’s first two years of funding indigent defense resulted in progress toward better services for criminal defendants who cannot otherwise afford their own counsel, according to reports relea…",
+      "url": "https://www.spotlightpa.org/news/2026/04/pennsylvania-indigent-defense-public-defender-state-funding-justice-system/",
+      "source": "Spotlight PA",
+      "cat": "pa",
+      "date": "2026-04-01T08:00:00+00:00"
+    },
     {
       "title": "Police ID 2 men killed in West Philadelphia shooting that left 3 others injured",
       "summary": "A quintuple shooting in West Philadelphia left at least two people dead Monday night, according to police.",
@@ -51,28 +99,12 @@
       "date": "2026-03-31T22:24:03+00:00"
     },
     {
-      "title": "Intoxicated man carjacked tow truck and hit 2 vehicles in Gloucester County, police say",
-      "summary": "A Gloucester County man was arrested for suspected DWI after police say he carjacked a tow truck and crashed head-on into two vehicles.",
-      "url": "https://6abc.com/post/intoxicated-man-carjacked-tow-truck-hit-2-vehicles-washington-township-new-jersey-police-say/18815267/",
-      "source": "6abc",
-      "cat": "regional",
-      "date": "2026-03-31T22:13:52+00:00"
-    },
-    {
       "title": "Trump order to block NPR, PBS funding was unlawful, judge rules",
       "summary": "U.S. District Judge Randolph Daniel Moss wrote in a 62-page order that while many of the original issues in the case are no longer relevant, the section of the executive order that called on agencies…",
       "url": "https://penncapital-star.com/2026/03/31/repub/trump-order-to-block-npr-pbs-funding-was-unlawful-judge-rules/",
       "source": "Capital-Star",
       "cat": "pa",
       "date": "2026-03-31T21:57:18+00:00"
-    },
-    {
-      "title": "The Philadelphia School District's Preliminary Budget",
-      "summary": "Host Tam Edwards and the Panel took a deep dive into the preliminary Philadelphia School District budget and the major cuts that would be enacted. Can Mayor Cherelle Parker's proposed $1 Rideshare tax…",
-      "url": "https://6abc.com/post/philadelphia-school-districts-preliminary-budget/18789739/",
-      "source": "6abc",
-      "cat": "regional",
-      "date": "2026-03-31T21:51:26+00:00"
     },
     {
       "title": "States say ICE pulled Medicaid data despite court order",
@@ -323,30 +355,6 @@
       "date": "2026-03-27T19:31:38+00:00"
     },
     {
-      "title": "State policy will determine how many people lose Medicaid under work rules",
-      "summary": "The report, released this week by the Urban Institute with support from the Robert Wood Johnson Foundation, projects that in 2028, between 4.9 million and 10.1 million people will lose coverage as a r…",
-      "url": "https://penncapital-star.com/2026/03/27/repub/state-policy-will-determine-how-many-people-lose-medicaid-under-work-rules/",
-      "source": "Capital-Star",
-      "cat": "pa",
-      "date": "2026-03-27T19:04:38+00:00"
-    },
-    {
-      "title": "Embattled Chester County election director Karen Barsoum to resign after primary",
-      "summary": "This article was originally published by Votebeat, a nonprofit news organization covering local election administration and voting access. The election director in Chester County, under fire for a ser…",
-      "url": "https://penncapital-star.com/election-2026/embattled-chester-county-election-director-karen-barsoum-to-resign-after-primary/",
-      "source": "Capital-Star",
-      "cat": "pa",
-      "date": "2026-03-27T13:42:23+00:00"
-    },
-    {
-      "title": "Your personal data might set your grocery prices. States aim to crack down.",
-      "summary": "Some companies are using personal data to set individualized prices for customers, a tactic known as surveillance pricing.",
-      "url": "https://penncapital-star.com/2026/03/27/repub/your-personal-data-might-set-your-grocery-prices-states-aim-to-crack-down/",
-      "source": "Capital-Star",
-      "cat": "pa",
-      "date": "2026-03-27T13:19:15+00:00"
-    },
-    {
       "title": "Cherry blossom guide; SEPTA bus route overhaul; Illegal dumping in Pennypack Park | Morning Roundup",
       "summary": "#BILLYPENNGRAM OF THE DAY Navy Yard horizon(Photo by @jim50tim) Tis the season: Where to see cherry blossoms in Philly Cherry blossoms are a Philly spring staple and some of the colorful, [&#8230;] Th…",
       "url": "https://billypenn.com/2026/03/27/cherry-blossoms-philadelphia-septa-bus-route-overhaul-illegal-dumping-morning-roundup/",
@@ -361,14 +369,6 @@
       "source": "Spotlight PA",
       "cat": "pa",
       "date": "2026-03-27T09:00:00+00:00"
-    },
-    {
-      "title": "SEPTA launches publicity blitz ahead of bus network overhaul",
-      "summary": "Love Philly? So do we. Let’s be friends. Sign up for the Billy Penn newsletter today. SEPTA has launched a publicity blitz as it prepares to finally roll out its long-delayed [&#8230;] The post SEPTA…",
-      "url": "https://billypenn.com/2026/03/26/septa-new-bus-network-revolution-eliminate-routes/",
-      "source": "Billy Penn",
-      "cat": "regional",
-      "date": "2026-03-26T20:27:08+00:00"
     },
     {
       "title": "Embattled Chester County election director Karen Barsoum to resign after primary",
@@ -497,14 +497,6 @@
       "source": "Spotlight PA",
       "cat": "pa",
       "date": "2026-03-19T15:00:00+00:00"
-    },
-    {
-      "title": "Iconic poets, authors, and bookstores: How well do you know Pa.’s Black literary scene?",
-      "summary": "A number of prominent Black literary figures have called Pennsylvania home. Test your knowledge of the state’s most iconic Black authors, artists, and Black-owned bookshops in the seven question quiz…",
-      "url": "https://www.spotlightpa.org/news/2026/03/black-books-langston-hughes-august-wilson-jill-scott-philadelphia-pittsburgh-pennsylvania/",
-      "source": "Spotlight PA",
-      "cat": "pa",
-      "date": "2026-03-19T14:00:00+00:00"
     }
   ]
 }
