@@ -1,22 +1,7 @@
 {
-  "updated": "2026-04-01T11:43:39.179970",
-  "count": 76,
+  "updated": "2026-04-01T23:11:45.460504",
+  "count": 77,
   "events": [
-    {
-      "id": "cc-r-2026-04-01",
-      "_org": "County Council",
-      "summary": "County Council Regular Public Meeting",
-      "start": {
-        "dateTime": "2026-04-01T18:00:00"
-      },
-      "end": {
-        "dateTime": "2026-04-01T20:00:00"
-      },
-      "location": "Government Center, 201 W Front St, Media, PA 19063 (1st Floor)",
-      "description": "Regular Public Meeting. Open to the public. Residents may speak during Public Comment. Meetings typically conclude around 8:00 PM (or 3:00 PM Jun\u2013Dec).",
-      "htmlLink": "https://www.delcopa.gov/council/meetings",
-      "recurring": "1st & 3rd Wednesday"
-    },
     {
       "id": "di-citizens-2026-04-04",
       "_org": "DELCO Indivisible",
@@ -48,6 +33,36 @@
       "recurring": "Every Saturday 1\u20132pm"
     },
     {
+      "id": "cc-p-2026-04-07",
+      "_org": "County Council",
+      "summary": "County Council Preliminary Agenda Meeting",
+      "start": {
+        "dateTime": "2026-04-07T13:00:00"
+      },
+      "end": {
+        "dateTime": "2026-04-07T15:00:00"
+      },
+      "location": "Government Center, 201 W Front St, Media, PA 19063 (Room 200)",
+      "description": "Preliminary Agenda Meeting. Open to the public. Recordings posted by 5pm same day.",
+      "htmlLink": "https://www.delcopa.gov/council/meetings",
+      "recurring": "Tuesday before each Council meeting"
+    },
+    {
+      "id": "cc-r-2026-04-08",
+      "_org": "County Council",
+      "summary": "County Council Regular Public Meeting",
+      "start": {
+        "dateTime": "2026-04-08T18:00:00"
+      },
+      "end": {
+        "dateTime": "2026-04-08T20:00:00"
+      },
+      "location": "Government Center, 201 W Front St, Media, PA 19063 (1st Floor)",
+      "description": "Regular Public Meeting. Open to the public. Public Comment available. Typically concludes 8pm (or 3pm Jun\u2013Dec).",
+      "htmlLink": "https://www.delcopa.gov/council/meetings",
+      "recurring": "1st & 3rd Wednesday"
+    },
+    {
       "id": "nk-springfield-2026-04-11",
       "_org": "No Kings",
       "summary": "No Kings: Springfield \u2013 Weekly Saturday Demo",
@@ -63,7 +78,7 @@
       "recurring": "Every Saturday 1\u20132pm"
     },
     {
-      "id": "cc-p-2026-04-15",
+      "id": "cc-p-2026-04-14",
       "_org": "County Council",
       "summary": "County Council Preliminary Agenda Meeting",
       "start": {
@@ -73,7 +88,7 @@
         "dateTime": "2026-04-14T15:00:00"
       },
       "location": "Government Center, 201 W Front St, Media, PA 19063 (Room 200)",
-      "description": "Preliminary Agenda Meeting to familiarize Council and the public on upcoming agenda items. Open to the public. Recorded and posted by 5:00 PM same day.",
+      "description": "Preliminary Agenda Meeting. Open to the public. Recordings posted by 5pm same day.",
       "htmlLink": "https://www.delcopa.gov/council/meetings",
       "recurring": "Tuesday before each Council meeting"
     },
@@ -103,7 +118,7 @@
         "dateTime": "2026-04-15T20:00:00"
       },
       "location": "Government Center, 201 W Front St, Media, PA 19063 (1st Floor)",
-      "description": "Regular Public Meeting. Open to the public. Residents may speak during Public Comment. Meetings typically conclude around 8:00 PM (or 3:00 PM Jun\u2013Dec).",
+      "description": "Regular Public Meeting. Open to the public. Public Comment available. Typically concludes 8pm (or 3pm Jun\u2013Dec).",
       "htmlLink": "https://www.delcopa.gov/council/meetings",
       "recurring": "1st & 3rd Wednesday"
     },
@@ -138,7 +153,7 @@
       "recurring": "Every Saturday 1\u20132pm"
     },
     {
-      "id": "di-site-2116086379798017237",
+      "id": "di-site-3919778455173749979",
       "_org": "DELCO Indivisible",
       "summary": "MoN, ApR 20th",
       "start": {
@@ -211,7 +226,7 @@
       "recurring": "Every Saturday 1\u20132pm"
     },
     {
-      "id": "cc-p-2026-05-06",
+      "id": "cc-p-2026-05-05",
       "_org": "County Council",
       "summary": "County Council Preliminary Agenda Meeting",
       "start": {
@@ -221,7 +236,7 @@
         "dateTime": "2026-05-05T15:00:00"
       },
       "location": "Government Center, 201 W Front St, Media, PA 19063 (Room 200)",
-      "description": "Preliminary Agenda Meeting to familiarize Council and the public on upcoming agenda items. Open to the public. Recorded and posted by 5:00 PM same day.",
+      "description": "Preliminary Agenda Meeting. Open to the public. Recordings posted by 5pm same day.",
       "htmlLink": "https://www.delcopa.gov/council/meetings",
       "recurring": "Tuesday before each Council meeting"
     },
@@ -236,7 +251,7 @@
         "dateTime": "2026-05-06T20:00:00"
       },
       "location": "Government Center, 201 W Front St, Media, PA 19063 (1st Floor)",
-      "description": "Regular Public Meeting. Open to the public. Residents may speak during Public Comment. Meetings typically conclude around 8:00 PM (or 3:00 PM Jun\u2013Dec).",
+      "description": "Regular Public Meeting. Open to the public. Public Comment available. Typically concludes 8pm (or 3pm Jun\u2013Dec).",
       "htmlLink": "https://www.delcopa.gov/council/meetings",
       "recurring": "1st & 3rd Wednesday"
     },
@@ -299,7 +314,7 @@
       "recurring": ""
     },
     {
-      "id": "cc-p-2026-05-20",
+      "id": "cc-p-2026-05-19",
       "_org": "County Council",
       "summary": "County Council Preliminary Agenda Meeting",
       "start": {
@@ -309,7 +324,7 @@
         "dateTime": "2026-05-19T15:00:00"
       },
       "location": "Government Center, 201 W Front St, Media, PA 19063 (Room 200)",
-      "description": "Preliminary Agenda Meeting to familiarize Council and the public on upcoming agenda items. Open to the public. Recorded and posted by 5:00 PM same day.",
+      "description": "Preliminary Agenda Meeting. Open to the public. Recordings posted by 5pm same day.",
       "htmlLink": "https://www.delcopa.gov/council/meetings",
       "recurring": "Tuesday before each Council meeting"
     },
@@ -324,7 +339,7 @@
         "dateTime": "2026-05-20T20:00:00"
       },
       "location": "Government Center, 201 W Front St, Media, PA 19063 (1st Floor)",
-      "description": "Regular Public Meeting. Open to the public. Residents may speak during Public Comment. Meetings typically conclude around 8:00 PM (or 3:00 PM Jun\u2013Dec).",
+      "description": "Regular Public Meeting. Open to the public. Public Comment available. Typically concludes 8pm (or 3pm Jun\u2013Dec).",
       "htmlLink": "https://www.delcopa.gov/council/meetings",
       "recurring": "1st & 3rd Wednesday"
     },
@@ -389,7 +404,7 @@
       "recurring": "Every Saturday 1\u20132pm"
     },
     {
-      "id": "cc-p-2026-06-03",
+      "id": "cc-p-2026-06-02",
       "_org": "County Council",
       "summary": "County Council Preliminary Agenda Meeting",
       "start": {
@@ -399,7 +414,7 @@
         "dateTime": "2026-06-02T15:00:00"
       },
       "location": "Government Center, 201 W Front St, Media, PA 19063 (Room 200)",
-      "description": "Preliminary Agenda Meeting to familiarize Council and the public on upcoming agenda items. Open to the public. Recorded and posted by 5:00 PM same day.",
+      "description": "Preliminary Agenda Meeting. Open to the public. Recordings posted by 5pm same day.",
       "htmlLink": "https://www.delcopa.gov/council/meetings",
       "recurring": "Tuesday before each Council meeting"
     },
@@ -414,7 +429,7 @@
         "dateTime": "2026-06-03T15:00:00"
       },
       "location": "Government Center, 201 W Front St, Media, PA 19063 (1st Floor)",
-      "description": "Regular Public Meeting. Open to the public. Residents may speak during Public Comment. Meetings typically conclude around 8:00 PM (or 3:00 PM Jun\u2013Dec).",
+      "description": "Regular Public Meeting. Open to the public. Public Comment available. Typically concludes 8pm (or 3pm Jun\u2013Dec).",
       "htmlLink": "https://www.delcopa.gov/council/meetings",
       "recurring": "1st & 3rd Wednesday"
     },
@@ -479,7 +494,7 @@
       "recurring": "Every Saturday 1\u20132pm"
     },
     {
-      "id": "cc-p-2026-06-17",
+      "id": "cc-p-2026-06-16",
       "_org": "County Council",
       "summary": "County Council Preliminary Agenda Meeting",
       "start": {
@@ -489,7 +504,7 @@
         "dateTime": "2026-06-16T15:00:00"
       },
       "location": "Government Center, 201 W Front St, Media, PA 19063 (Room 200)",
-      "description": "Preliminary Agenda Meeting to familiarize Council and the public on upcoming agenda items. Open to the public. Recorded and posted by 5:00 PM same day.",
+      "description": "Preliminary Agenda Meeting. Open to the public. Recordings posted by 5pm same day.",
       "htmlLink": "https://www.delcopa.gov/council/meetings",
       "recurring": "Tuesday before each Council meeting"
     },
@@ -504,7 +519,7 @@
         "dateTime": "2026-06-17T15:00:00"
       },
       "location": "Government Center, 201 W Front St, Media, PA 19063 (1st Floor)",
-      "description": "Regular Public Meeting. Open to the public. Residents may speak during Public Comment. Meetings typically conclude around 8:00 PM (or 3:00 PM Jun\u2013Dec).",
+      "description": "Regular Public Meeting. Open to the public. Public Comment available. Typically concludes 8pm (or 3pm Jun\u2013Dec).",
       "htmlLink": "https://www.delcopa.gov/council/meetings",
       "recurring": "1st & 3rd Wednesday"
     },
@@ -569,7 +584,7 @@
       "recurring": "Every Saturday 1\u20132pm"
     },
     {
-      "id": "cc-p-2026-07-01",
+      "id": "cc-p-2026-06-30",
       "_org": "County Council",
       "summary": "County Council Preliminary Agenda Meeting",
       "start": {
@@ -579,7 +594,7 @@
         "dateTime": "2026-06-30T15:00:00"
       },
       "location": "Government Center, 201 W Front St, Media, PA 19063 (Room 200)",
-      "description": "Preliminary Agenda Meeting to familiarize Council and the public on upcoming agenda items. Open to the public. Recorded and posted by 5:00 PM same day.",
+      "description": "Preliminary Agenda Meeting. Open to the public. Recordings posted by 5pm same day.",
       "htmlLink": "https://www.delcopa.gov/council/meetings",
       "recurring": "Tuesday before each Council meeting"
     },
@@ -594,7 +609,7 @@
         "dateTime": "2026-07-01T15:00:00"
       },
       "location": "Government Center, 201 W Front St, Media, PA 19063 (1st Floor)",
-      "description": "Regular Public Meeting. Open to the public. Residents may speak during Public Comment. Meetings typically conclude around 8:00 PM (or 3:00 PM Jun\u2013Dec).",
+      "description": "Regular Public Meeting. Open to the public. Public Comment available. Typically concludes 8pm (or 3pm Jun\u2013Dec).",
       "htmlLink": "https://www.delcopa.gov/council/meetings",
       "recurring": "1st & 3rd Wednesday"
     },
@@ -644,7 +659,7 @@
       "recurring": "Every Saturday 1\u20132pm"
     },
     {
-      "id": "cc-p-2026-07-15",
+      "id": "cc-p-2026-07-14",
       "_org": "County Council",
       "summary": "County Council Preliminary Agenda Meeting",
       "start": {
@@ -654,7 +669,7 @@
         "dateTime": "2026-07-14T15:00:00"
       },
       "location": "Government Center, 201 W Front St, Media, PA 19063 (Room 200)",
-      "description": "Preliminary Agenda Meeting to familiarize Council and the public on upcoming agenda items. Open to the public. Recorded and posted by 5:00 PM same day.",
+      "description": "Preliminary Agenda Meeting. Open to the public. Recordings posted by 5pm same day.",
       "htmlLink": "https://www.delcopa.gov/council/meetings",
       "recurring": "Tuesday before each Council meeting"
     },
@@ -684,7 +699,7 @@
         "dateTime": "2026-07-15T15:00:00"
       },
       "location": "Government Center, 201 W Front St, Media, PA 19063 (1st Floor)",
-      "description": "Regular Public Meeting. Open to the public. Residents may speak during Public Comment. Meetings typically conclude around 8:00 PM (or 3:00 PM Jun\u2013Dec).",
+      "description": "Regular Public Meeting. Open to the public. Public Comment available. Typically concludes 8pm (or 3pm Jun\u2013Dec).",
       "htmlLink": "https://www.delcopa.gov/council/meetings",
       "recurring": "1st & 3rd Wednesday"
     },
@@ -779,7 +794,7 @@
       "recurring": "Every Saturday 1\u20132pm"
     },
     {
-      "id": "cc-p-2026-08-05",
+      "id": "cc-p-2026-08-04",
       "_org": "County Council",
       "summary": "County Council Preliminary Agenda Meeting",
       "start": {
@@ -789,7 +804,7 @@
         "dateTime": "2026-08-04T15:00:00"
       },
       "location": "Government Center, 201 W Front St, Media, PA 19063 (Room 200)",
-      "description": "Preliminary Agenda Meeting to familiarize Council and the public on upcoming agenda items. Open to the public. Recorded and posted by 5:00 PM same day.",
+      "description": "Preliminary Agenda Meeting. Open to the public. Recordings posted by 5pm same day.",
       "htmlLink": "https://www.delcopa.gov/council/meetings",
       "recurring": "Tuesday before each Council meeting"
     },
@@ -804,7 +819,7 @@
         "dateTime": "2026-08-05T15:00:00"
       },
       "location": "Government Center, 201 W Front St, Media, PA 19063 (1st Floor)",
-      "description": "Regular Public Meeting. Open to the public. Residents may speak during Public Comment. Meetings typically conclude around 8:00 PM (or 3:00 PM Jun\u2013Dec).",
+      "description": "Regular Public Meeting. Open to the public. Public Comment available. Typically concludes 8pm (or 3pm Jun\u2013Dec).",
       "htmlLink": "https://www.delcopa.gov/council/meetings",
       "recurring": "1st & 3rd Wednesday"
     },
@@ -854,7 +869,7 @@
       "recurring": "Every Saturday 1\u20132pm"
     },
     {
-      "id": "cc-p-2026-08-19",
+      "id": "cc-p-2026-08-18",
       "_org": "County Council",
       "summary": "County Council Preliminary Agenda Meeting",
       "start": {
@@ -864,7 +879,7 @@
         "dateTime": "2026-08-18T15:00:00"
       },
       "location": "Government Center, 201 W Front St, Media, PA 19063 (Room 200)",
-      "description": "Preliminary Agenda Meeting to familiarize Council and the public on upcoming agenda items. Open to the public. Recorded and posted by 5:00 PM same day.",
+      "description": "Preliminary Agenda Meeting. Open to the public. Recordings posted by 5pm same day.",
       "htmlLink": "https://www.delcopa.gov/council/meetings",
       "recurring": "Tuesday before each Council meeting"
     },
@@ -879,7 +894,7 @@
         "dateTime": "2026-08-19T15:00:00"
       },
       "location": "Government Center, 201 W Front St, Media, PA 19063 (1st Floor)",
-      "description": "Regular Public Meeting. Open to the public. Residents may speak during Public Comment. Meetings typically conclude around 8:00 PM (or 3:00 PM Jun\u2013Dec).",
+      "description": "Regular Public Meeting. Open to the public. Public Comment available. Typically concludes 8pm (or 3pm Jun\u2013Dec).",
       "htmlLink": "https://www.delcopa.gov/council/meetings",
       "recurring": "1st & 3rd Wednesday"
     },
@@ -944,7 +959,7 @@
       "recurring": "Every Saturday 1\u20132pm"
     },
     {
-      "id": "cc-p-2026-09-02",
+      "id": "cc-p-2026-09-01",
       "_org": "County Council",
       "summary": "County Council Preliminary Agenda Meeting",
       "start": {
@@ -954,7 +969,7 @@
         "dateTime": "2026-09-01T15:00:00"
       },
       "location": "Government Center, 201 W Front St, Media, PA 19063 (Room 200)",
-      "description": "Preliminary Agenda Meeting to familiarize Council and the public on upcoming agenda items. Open to the public. Recorded and posted by 5:00 PM same day.",
+      "description": "Preliminary Agenda Meeting. Open to the public. Recordings posted by 5pm same day.",
       "htmlLink": "https://www.delcopa.gov/council/meetings",
       "recurring": "Tuesday before each Council meeting"
     },
@@ -969,7 +984,7 @@
         "dateTime": "2026-09-02T15:00:00"
       },
       "location": "Government Center, 201 W Front St, Media, PA 19063 (1st Floor)",
-      "description": "Regular Public Meeting. Open to the public. Residents may speak during Public Comment. Meetings typically conclude around 8:00 PM (or 3:00 PM Jun\u2013Dec).",
+      "description": "Regular Public Meeting. Open to the public. Public Comment available. Typically concludes 8pm (or 3pm Jun\u2013Dec).",
       "htmlLink": "https://www.delcopa.gov/council/meetings",
       "recurring": "1st & 3rd Wednesday"
     },
@@ -1034,7 +1049,7 @@
       "recurring": "Every Saturday 1\u20132pm"
     },
     {
-      "id": "cc-p-2026-09-16",
+      "id": "cc-p-2026-09-15",
       "_org": "County Council",
       "summary": "County Council Preliminary Agenda Meeting",
       "start": {
@@ -1044,7 +1059,7 @@
         "dateTime": "2026-09-15T15:00:00"
       },
       "location": "Government Center, 201 W Front St, Media, PA 19063 (Room 200)",
-      "description": "Preliminary Agenda Meeting to familiarize Council and the public on upcoming agenda items. Open to the public. Recorded and posted by 5:00 PM same day.",
+      "description": "Preliminary Agenda Meeting. Open to the public. Recordings posted by 5pm same day.",
       "htmlLink": "https://www.delcopa.gov/council/meetings",
       "recurring": "Tuesday before each Council meeting"
     },
@@ -1059,7 +1074,7 @@
         "dateTime": "2026-09-16T15:00:00"
       },
       "location": "Government Center, 201 W Front St, Media, PA 19063 (1st Floor)",
-      "description": "Regular Public Meeting. Open to the public. Residents may speak during Public Comment. Meetings typically conclude around 8:00 PM (or 3:00 PM Jun\u2013Dec).",
+      "description": "Regular Public Meeting. Open to the public. Public Comment available. Typically concludes 8pm (or 3pm Jun\u2013Dec).",
       "htmlLink": "https://www.delcopa.gov/council/meetings",
       "recurring": "1st & 3rd Wednesday"
     },
