@@ -1,22 +1,7 @@
 {
-  "updated": "2026-03-31T11:41:16.473827",
-  "count": 77,
+  "updated": "2026-04-01T11:43:39.179970",
+  "count": 76,
   "events": [
-    {
-      "id": "cc-p-2026-04-01",
-      "_org": "County Council",
-      "summary": "County Council Preliminary Agenda Meeting",
-      "start": {
-        "dateTime": "2026-03-31T13:00:00"
-      },
-      "end": {
-        "dateTime": "2026-03-31T15:00:00"
-      },
-      "location": "Government Center, 201 W Front St, Media, PA 19063 (Room 200)",
-      "description": "Preliminary Agenda Meeting to familiarize Council and the public on upcoming agenda items. Open to the public. Recorded and posted by 5:00 PM same day.",
-      "htmlLink": "https://www.delcopa.gov/council/meetings",
-      "recurring": "Tuesday before each Council meeting"
-    },
     {
       "id": "cc-r-2026-04-01",
       "_org": "County Council",
@@ -153,7 +138,7 @@
       "recurring": "Every Saturday 1\u20132pm"
     },
     {
-      "id": "di-site--5686409318138244454",
+      "id": "di-site-2116086379798017237",
       "_org": "DELCO Indivisible",
       "summary": "MoN, ApR 20th",
       "start": {
