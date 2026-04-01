@@ -334,32 +334,53 @@ def generate_recurring_events():
             d += timedelta(days=1)
 
     WED, TUE = 2, 1
-    for month in range(1, 13):
-        for week in [1, 3]:
-            reg_date = nth_weekday(TODAY.year, month, WED, week)
-            prelim_date = reg_date - timedelta(days=1)
-            reg_time = 18 if month <= 5 else 13  # 6pm Jan–May, 1pm Jun–Dec
+    # ── COUNTY COUNCIL: Exact 2026 dates from delcopa.gov/council/meetings ──────
+    # Regular meetings: 6pm Jan–May, 1pm Jun–Dec
+    # Preliminary meetings: Tuesday before each Regular, 1pm
+    COUNCIL_2026 = [
+        # (prelim_date, regular_date, regular_hour)
+        (date(2026,  4, 7), date(2026,  4, 8), 18),
+        (date(2026,  4, 14), date(2026,  4, 15), 18),
+        (date(2026,  5,  5), date(2026,  5,  6), 18),
+        (date(2026,  5, 19), date(2026,  5, 20), 18),
+        (date(2026,  6,  2), date(2026,  6,  3), 13),
+        (date(2026,  6, 16), date(2026,  6, 17), 13),
+        (date(2026,  6, 30), date(2026,  7,  1), 13),
+        (date(2026,  7, 14), date(2026,  7, 15), 13),
+        (date(2026,  8,  4), date(2026,  8,  5), 13),
+        (date(2026,  8, 18), date(2026,  8, 19), 13),
+        (date(2026,  9,  1), date(2026,  9,  2), 13),
+        (date(2026,  9, 15), date(2026,  9, 16), 13),
+        (date(2026, 10,  6), date(2026, 10,  7), 13),
+        (date(2026, 10, 20), date(2026, 10, 21), 13),
+        (date(2026, 11,  3), date(2026, 11,  4), 13),
+        (date(2026, 11, 17), date(2026, 11, 18), 13),
+        (date(2026, 12,  1), date(2026, 12,  2), 13),
+        (date(2026, 12, 15), date(2026, 12, 16), 13),
+    ]
 
-            for d, title, t, eid_suffix in [
-                (prelim_date, "County Council Preliminary Agenda Meeting", 13, f"p-{reg_date.isoformat()}"),
-                (reg_date, "County Council Regular Public Meeting", reg_time, f"r-{reg_date.isoformat()}"),
-            ]:
-                if d < TODAY or d > CUTOFF:
-                    continue
-                start_dt = datetime(d.year, d.month, d.day, t, 0)
-                end_dt = datetime(d.year, d.month, d.day, t + 2, 0)
-                is_prelim = "Preliminary" in title
-                desc = (
-                    "Preliminary Agenda Meeting to familiarize Council and the public on upcoming agenda items. Open to the public. Recorded and posted by 5:00 PM same day."
-                    if is_prelim else
-                    "Regular Public Meeting. Open to the public. Residents may speak during Public Comment. Meetings typically conclude around 8:00 PM (or 3:00 PM Jun–Dec)."
-                )
-                events.append(make_event(
-                    f"cc-{eid_suffix}", "County Council", title, start_dt, end_dt,
-                    "Government Center, 201 W Front St, Media, PA 19063" + (" (Room 200)" if is_prelim else " (1st Floor)"),
-                    desc, "https://www.delcopa.gov/council/meetings",
-                    "1st & 3rd Wednesday" if not is_prelim else "Tuesday before each Council meeting"
-                ))
+    for prelim_d, reg_d, reg_hour in COUNCIL_2026:
+        for d, title, t, suffix in [
+            (prelim_d, "County Council Preliminary Agenda Meeting", 13, "p-" + prelim_d.isoformat()),
+            (reg_d,    "County Council Regular Public Meeting",     reg_hour, "r-" + reg_d.isoformat()),
+        ]:
+            if d < TODAY or d > CUTOFF:
+                continue
+            start_dt = datetime(d.year, d.month, d.day, t, 0)
+            end_dt   = datetime(d.year, d.month, d.day, t + 2, 0)
+            is_prelim = "Preliminary" in title
+            desc = (
+                "Preliminary Agenda Meeting. Open to the public. Recordings posted by 5pm same day."
+                if is_prelim else
+                "Regular Public Meeting. Open to the public. Public Comment available. Typically concludes 8pm (or 3pm Jun–Dec)."
+            )
+            events.append(make_event(
+                "cc-" + suffix, "County Council", title, start_dt, end_dt,
+                "Government Center, 201 W Front St, Media, PA 19063" + (" (Room 200)" if is_prelim else " (1st Floor)"),
+                desc,
+                "https://www.delcopa.gov/council/meetings",
+                "1st & 3rd Wednesday" if not is_prelim else "Tuesday before each Council meeting"
+            ))
 
     # ── DELCO INDIVISIBLE: Monthly meeting (3rd Thursday) ────────────────────
     for month in range(1, 13):
