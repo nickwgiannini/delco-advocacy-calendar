@@ -1,22 +1,70 @@
 {
-  "updated": "2026-04-01T12:53:42.621421+00:00",
-  "count": 62,
+  "updated": "2026-04-01T18:45:04.205901+00:00",
+  "count": 59,
   "articles": [
     {
-      "title": "The Franklin Fountain in Old City Philadelphia introducing 26 unique ice cream flavors",
-      "summary": "An iconic Philadelphia ice cream parlor is reinventing the sweet treat with the introduction of their first batch of 26 new, experimental flavors.",
-      "url": "https://6abc.com/post/franklin-fountain-old-city-philadelphia-introducing-26-unique-ice-cream-flavors/18816420/",
+      "title": "Megan Thee Stallion takes 2 Broadway shows off after illness during 'Moulin Rouge!'",
+      "summary": "According to her representative, the Houston, Texas native was in the middle of a performance when she started feeling sick and was promptly taken to the hospital.",
+      "url": "https://abc7.com/post/houston-rapper-megan-thee-stallion-hospitalized-exiting-moulin-rouge-musical-mid-show/18822312/",
       "source": "6abc",
       "cat": "regional",
-      "date": "2026-04-01T12:42:00+00:00"
+      "date": "2026-04-01T17:06:43+00:00"
     },
     {
-      "title": "At least 3 people killed as shots fired among large crowd gathered in Chester, Pa.",
-      "summary": "Chester police are investigating an incident that left at least three people dead early Wednesday morning.",
+      "title": "Woman stabbed then attacked with bleach by her roommate in Nicetown, police say",
+      "summary": "A 19-year-old woman is in critical condition after police say she was stabbed and doused with bleach during a violent altercation with her roommate.",
+      "url": "https://6abc.com/post/woman-stabbed-neck-bleach-thrown-during-argument-philadelphias-feltonville-neighborhood/18821255/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-04-01T17:06:30+00:00"
+    },
+    {
+      "title": "The Police Athletic League of Philadelphia allows students to shadow Philadelphia city officials",
+      "summary": "The teenagers learned firsthand how Philadelphia's government operates.",
+      "url": "https://6abc.com/post/police-athletic-league-philadelphia-allows-students-shadow-city-officials/18822820/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-04-01T17:03:19+00:00"
+    },
+    {
+      "title": "Man believed to have killed 2 people in Chester, Pa. before being shot by police: DA",
+      "summary": "A man apparently killed two people before he was fatally shot by police early Wednesday morning in Chester, Pennsylvania.",
       "url": "https://6abc.com/post/person-shot-another-stabbed-large-crowd-gathered-high-school-chester-pa/18820751/",
       "source": "6abc",
       "cat": "regional",
-      "date": "2026-04-01T12:13:16+00:00"
+      "date": "2026-04-01T16:22:59+00:00"
+    },
+    {
+      "title": "Adequacy funds are at the center of Pa. ed budget debates. See how your school district uses them.",
+      "summary": "New data released by the state last month show school districts used the initial round of funds, allocated for the 2024-2025 school year, to boost student academic performance, address increases in ch…",
+      "url": "https://penncapital-star.com/education/adequacy-funds-are-at-the-center-of-pa-education-budget-debates-see-how-your-school-district-uses-them/",
+      "source": "Capital-Star",
+      "cat": "pa",
+      "date": "2026-04-01T16:15:15+00:00"
+    },
+    {
+      "title": "Trump administration halts $1 billion immigration warehouse expansion amid backlash",
+      "summary": "WASHINGTON — The Department of Homeland Security is pausing the purchase of new warehouses intended to house immigrants as it scrutinizes all contracts signed under former Homeland Security Secretary…",
+      "url": "https://www.spotlightpa.org/news/2026/04/dhs-ice-detention-warehouse-pause-immigration-federal-government/",
+      "source": "Spotlight PA",
+      "cat": "pa",
+      "date": "2026-04-01T14:10:46+00:00"
+    },
+    {
+      "title": "Pennsylvania lawmakers are talking the talk on data center regulations. But will they walk?",
+      "summary": "Whether he state’s fractious politics can deliver on the issue of regulating data centers is another question.",
+      "url": "https://penncapital-star.com/energy-environment/pennsylvania-lawmakers-are-talking-the-talk-on-data-center-regulations-but-will-they-walk/",
+      "source": "Capital-Star",
+      "cat": "pa",
+      "date": "2026-04-01T13:57:41+00:00"
+    },
+    {
+      "title": "Drivers face $51 fine as warning period ends for SEPTA's automated trolley cameras",
+      "summary": "Beginning April 1, drivers will be fined $51 if they are caught blocking SEPTA trolley lanes and stopping zones",
+      "url": "https://6abc.com/post/septas-automated-trolley-camera-enforcement-begins-drivers-illegally-block-lanes-stopping-zones/18821881/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-04-01T13:50:36+00:00"
     },
     {
       "title": "Fatal police violence may have declined for the first time in years",
@@ -51,46 +99,6 @@
       "date": "2026-04-01T08:00:00+00:00"
     },
     {
-      "title": "Police ID 2 men killed in West Philadelphia shooting that left 3 others injured",
-      "summary": "A quintuple shooting in West Philadelphia left at least two people dead Monday night, according to police.",
-      "url": "https://6abc.com/post/west-philadelphia-shooting-leaves-2-dead-3-injured-60th-delancy/18812329/",
-      "source": "6abc",
-      "cat": "regional",
-      "date": "2026-04-01T04:34:48+00:00"
-    },
-    {
-      "title": "Ultimate Job Interview with Democrat candidates for Pa's 3rd Congressional District",
-      "summary": "The Philadelphia Citizen hosted its Ultimate Job Interview on Tuesday night with the three top Democrats (based on polling and fundraising) running for Pa's 3rd Congressional District.",
-      "url": "https://6abc.com/post/philadelphia-citizen-ultimate-job-interview-3rd-congressional-district-candidates/18817571/",
-      "source": "6abc",
-      "cat": "regional",
-      "date": "2026-04-01T04:26:59+00:00"
-    },
-    {
-      "title": "Some PECO workers could strike soon as union contract expires",
-      "summary": "IBEW Local 614 represents about 1,500 PECO employees who work as linemen, gas technicians, mechanics, call center workers and back office workers.",
-      "url": "https://6abc.com/post/peco-workers-could-strike-soon-ibew-local-614-contract-set-expire/18812618/",
-      "source": "6abc",
-      "cat": "regional",
-      "date": "2026-04-01T04:05:30+00:00"
-    },
-    {
-      "title": "Uber Eats delivery robot gets kicked in Center City Philadelphia",
-      "summary": "The robot got kicked not once, but twice. The second time, it was toppled over at the entrance of a parking garage at Juniper and Locust streets over the weekend.",
-      "url": "https://6abc.com/post/uber-eats-delivery-robot-gets-kicked-center-city-philadelphia/18817649/",
-      "source": "6abc",
-      "cat": "regional",
-      "date": "2026-04-01T01:03:54+00:00"
-    },
-    {
-      "title": "Trump signs order directing creation of a national voter list, a move sure to face legal challenges",
-      "summary": "Tuesday's order is expected to prompt legal challenges, as the president continues to try to interfere with state-run elections.",
-      "url": "https://abc7.com/post/trump-signs-order-directing-creation-national-voter-list-move-face-legal-challenges/18818045/",
-      "source": "6abc",
-      "cat": "regional",
-      "date": "2026-03-31T23:21:25+00:00"
-    },
-    {
       "title": "Without constitutional authority, Trump signs order seeking to curb vote-by-mail in bid to control state election laws",
       "summary": "The Constitution gives Congress — not the president by executive order — the power to override state election regulations.",
       "url": "https://penncapital-star.com/2026/03/31/repub/with-no-constitutional-authority-trump-signs-order-seeking-to-curb-vote-by-mail-in-bid-to-exert-control-over-states/",
@@ -116,7 +124,7 @@
     },
     {
       "title": "Penn must give Trump admin information on Jewish employees, judge orders",
-      "summary": "PHILADELPHIA — A federal judge on Tuesday ordered the University of Pennsylvania to hand over records about Jewish employees on campus to a federal agency as part of an investigation into antisemitic…",
+      "summary": "HARRISBURG — A federal judge on Tuesday ordered the University of Pennsylvania to hand over records about Jewish employees on campus to a federal agency as part of an investigation into antisemitic di…",
       "url": "https://www.spotlightpa.org/news/2026/03/upenn-trump-jewish-records-antisemitism-federal-government/",
       "source": "Spotlight PA",
       "cat": "pa",
@@ -331,36 +339,12 @@
       "date": "2026-03-28T19:46:27+00:00"
     },
     {
-      "title": "No Kings day rallies roll out across the US, with millions said to attend anti-Trump protests",
-      "summary": "No Kings day national organizers anticipate more than 3,000 demonstrations across the United States, including dozens in Pennsylvania.",
-      "url": "https://penncapital-star.com/2026/03/28/repub/no-kings-day-rallies-kick-off-across-the-us-with-millions-expected-in-anti-trump-protests/",
-      "source": "Capital-Star",
-      "cat": "pa",
-      "date": "2026-03-28T18:00:19+00:00"
-    },
-    {
       "title": "Meet a Shillington teen who wants to increase community engagement",
       "summary": "This article originally appeared in Good Day, Berks — Spotlight PA’s free daily newsletter for Berks County and your daily dose of Berks County essentials. Sign up here . This week’s Community Spotlig…",
       "url": "https://www.spotlightpa.org/berks/2026/03/berks-profile-community-intern-community-profile/",
       "source": "Spotlight PA",
       "cat": "pa",
       "date": "2026-03-28T13:00:00+00:00"
-    },
-    {
-      "title": "DOJ confirms voter data sharing with Homeland Security, but denies building national list",
-      "summary": "The Justice Department has demanded states provide full copies of their voter lists, including sensitive personal information, such as driver’s license and partial Social Security numbers. I",
-      "url": "https://penncapital-star.com/2026/03/27/repub/doj-confirms-voter-data-sharing-with-homeland-security-but-denies-building-national-list/",
-      "source": "Capital-Star",
-      "cat": "pa",
-      "date": "2026-03-27T19:31:38+00:00"
-    },
-    {
-      "title": "Cherry blossom guide; SEPTA bus route overhaul; Illegal dumping in Pennypack Park | Morning Roundup",
-      "summary": "#BILLYPENNGRAM OF THE DAY Navy Yard horizon(Photo by @jim50tim) Tis the season: Where to see cherry blossoms in Philly Cherry blossoms are a Philly spring staple and some of the colorful, [&#8230;] Th…",
-      "url": "https://billypenn.com/2026/03/27/cherry-blossoms-philadelphia-septa-bus-route-overhaul-illegal-dumping-morning-roundup/",
-      "source": "Billy Penn",
-      "cat": "regional",
-      "date": "2026-03-27T12:00:00+00:00"
     },
     {
       "title": "Meet the voracious food mappers trying to make it easier to find Pa.’s best eats",
@@ -489,14 +473,6 @@
       "source": "Spotlight PA",
       "cat": "pa",
       "date": "2026-03-19T16:39:37+00:00"
-    },
-    {
-      "title": "Great PA News Quiz: Broadband expansion wrinkle, utility profits, and fireball sightings",
-      "summary": "In this week’s quiz: Nuclear science company plans a Pennsylvania facility, a university plans rural clinics, and a Philadelphia museum plans to honor a global figure. If a blue “Take the News Quiz” b…",
-      "url": "https://www.spotlightpa.org/news/2026/03/pennsylvania-news-quiz-week-of-march-16-2026/",
-      "source": "Spotlight PA",
-      "cat": "pa",
-      "date": "2026-03-19T15:00:00+00:00"
     }
   ]
 }
