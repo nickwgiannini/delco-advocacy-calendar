@@ -1,7 +1,47 @@
 {
-  "updated": "2026-04-02T01:16:22.315979+00:00",
-  "count": 61,
+  "updated": "2026-04-02T06:59:46.996500+00:00",
+  "count": 63,
   "articles": [
+    {
+      "title": "Mother, father leave baby behind after cable theft: Police",
+      "summary": "Residents and workers in the area told Action News that while the situation was deeply troubling, such incidents have become less surprising.",
+      "url": "https://6abc.com/post/mother-father-allegedly-leave-baby-behind-alleged-criminal-behavior-upper-chichester-pa/18824296/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-04-02T04:17:06+00:00"
+    },
+    {
+      "title": "Parkside borough council president resigns amid theft charges",
+      "summary": "Investigators say Capobianco used a borough-issued gas card to fill up personal vehicles, totaling an estimated $2,500 worth of fuel.",
+      "url": "https://6abc.com/post/parkside-borough-council-president-dominic-capobianco-resigns-amid-theft-charges/18825704/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-04-02T03:37:36+00:00"
+    },
+    {
+      "title": "92-year-old at center of tax lien fight dies as sheriff enforces eviction",
+      "summary": "Gloria Gaynor had lived in the home for decades. Her daughter, Jackie Davis, said she believed the house would one day be passed down to her family.",
+      "url": "https://6abc.com/post/92-year-old-center-delaware-county-tax-lien-fight-dies-sheriff-enforces-eviction/18825646/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-04-02T03:35:49+00:00"
+    },
+    {
+      "title": "Philadelphia training aircraft lost power before crash that injured 2, including off-duty officer",
+      "summary": "Two people were injured, including an off-duty police officer, after a small plane went down in a Philadelphia park.",
+      "url": "https://6abc.com/post/small-plane-crashes-park-philadelphias-torresdale-neighborhood/18823758/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-04-02T03:33:54+00:00"
+    },
+    {
+      "title": "Two local doctors offering healthcare solutions for women",
+      "summary": "A common complaint from women is they can't find a doctor who really listens to them and addresses their needs.",
+      "url": "https://6abc.com/post/local-doctors-offering-healthcare-solutions-women/18821854/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-04-02T02:19:19+00:00"
+    },
     {
       "title": "Gov. Shapiro, first lady host interfaith discussion one year after Governor’s Residence firebombing",
       "summary": "It was the first full press event in the reception room since the attack.",
@@ -17,14 +57,6 @@
       "source": "Spotlight PA",
       "cat": "pa",
       "date": "2026-04-01T23:44:42+00:00"
-    },
-    {
-      "title": "Philadelphia training aircraft reportedly lost power before crash that injured 2",
-      "summary": "Two people were injured, including an off-duty police officer, after a small plane went down in a Philadelphia park.",
-      "url": "https://6abc.com/post/small-plane-crashes-park-philadelphias-torresdale-neighborhood/18823758/",
-      "source": "6abc",
-      "cat": "regional",
-      "date": "2026-04-01T23:26:32+00:00"
     },
     {
       "title": "Woman stabbed then attacked with bleach by her roommate in Nicetown, police say",
@@ -51,28 +83,12 @@
       "date": "2026-04-01T21:43:41+00:00"
     },
     {
-      "title": "Police fatally shoot armed suspect after double homicide in Chester, authorities say",
-      "summary": "Chester police shot and killed an armed man early Wednesday after officers entered a home where two people had already been attacked and killed.",
-      "url": "https://6abc.com/post/person-shot-another-stabbed-large-crowd-gathered-high-school-chester-pa/18820751/",
-      "source": "6abc",
-      "cat": "regional",
-      "date": "2026-04-01T21:43:06+00:00"
-    },
-    {
       "title": "Democratic AGs file 100th lawsuit against Trump",
       "summary": "Of the 67 cases with court rulings, the Democratic Attorneys General Association says its members have won 55 of those challenges.",
       "url": "https://penncapital-star.com/2026/04/01/repub/democratic-ags-file-100th-lawsuit-against-trump/",
       "source": "Capital-Star",
       "cat": "pa",
       "date": "2026-04-01T20:45:29+00:00"
-    },
-    {
-      "title": "New DNA testing links unsolved death of Utah teen in 1974 to serial killer Ted Bundy, sheriff says",
-      "summary": "New DNA testing has definitively linked the unsolved death of a Utah teenager in 1974 to the infamous serial killer Ted Bundy, the local sheriff's office said Wednesday.",
-      "url": "https://abc7.com/post/ted-bundy-victims-new-dna-testing-links-unsolved-death-utah-teen-laura-ann-aime-serial-killer-sheriff-says/18823844/",
-      "source": "6abc",
-      "cat": "regional",
-      "date": "2026-04-01T20:37:54+00:00"
     },
     {
       "title": "SC justices question whether death row inmate faked IQ results",
