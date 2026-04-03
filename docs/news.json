@@ -1,14 +1,14 @@
 {
-  "updated": "2026-04-03T06:56:52.380014+00:00",
+  "updated": "2026-04-03T12:38:50.554188+00:00",
   "count": 58,
   "articles": [
     {
-      "title": "Former NJ teacher charged with sexually assaulting student to remain behind bars",
-      "summary": "During a hearing this week, prosecutors revealed investigators recovered approximately 7,500 pages of text messages between the victim and Fisler.",
-      "url": "https://6abc.com/post/ashley-fisler-arrest-former-washington-twp-teacher-charged-sexually-assaulting-student-remain-behind-bars/18829981/",
+      "title": "Police seek hit-and-run driver after 14-year-old bicyclist hit by SUV in Hatboro",
+      "summary": "Hatboro police are searching for the driver of an SUV who struck a 14-year-old bicyclist and then drove away Monday afternoon",
+      "url": "https://6abc.com/post/hatboro-police-seek-hit-run-driver-suv-hits-14-year-old-bicyclist/18831636/",
       "source": "6abc",
       "cat": "regional",
-      "date": "2026-04-03T03:41:37+00:00"
+      "date": "2026-04-03T12:17:49+00:00"
     },
     {
       "title": "South Jersey pre-kindergarten aide charged with sexually assaulting kids over 10-year span",
@@ -16,15 +16,31 @@
       "url": "https://6abc.com/post/south-jersey-pre-kindergarten-aide-charged-sexually-assaulting-kids-10-year-span/18831373/",
       "source": "6abc",
       "cat": "regional",
-      "date": "2026-04-03T03:40:18+00:00"
+      "date": "2026-04-03T12:10:13+00:00"
     },
     {
-      "title": "Police seek hit-and-run driver after SUV hits 14-year-old bicyclist in Hatboro",
-      "summary": "According to police, a preliminary investigation shows Jaden Brill did not have the right of way. However, detectives said the driver will face criminal charges because she left the scene.",
-      "url": "https://6abc.com/post/hatboro-police-seek-hit-run-driver-suv-hits-14-year-old-bicyclist/18831636/",
+      "title": "New Hope is one of Pa.’s artsiest towns. Here’s how to spend a day there.",
+      "summary": "New Hope is known for its vibrant art community, which goes back decades and has made the town a hub for expression. “People who care about being creative and the arts tend to migrate to New Hope,” sa…",
+      "url": "https://www.spotlightpa.org/news/2026/04/new-hope-what-to-do-day-trip-guide-restaurants-activities-pennsylvania-local/",
+      "source": "Spotlight PA",
+      "cat": "pa",
+      "date": "2026-04-03T11:00:00+00:00"
+    },
+    {
+      "title": "Pennsylvania could require paid family leave — if lawmakers can decide who bears the cost",
+      "summary": "HARRISBURG — There’s a real chance Pennsylvania lawmakers could begin requiring employers to provide paid parental and medical leave, supporters say, though there are still critical disagreements on w…",
+      "url": "https://www.spotlightpa.org/news/2026/04/paid-family-leave-bill-pennsylvania-house-senate-capitol/",
+      "source": "Spotlight PA",
+      "cat": "pa",
+      "date": "2026-04-03T08:00:00+00:00"
+    },
+    {
+      "title": "Former NJ teacher charged with sexually assaulting student to remain behind bars",
+      "summary": "During a hearing this week, prosecutors revealed investigators recovered approximately 7,500 pages of text messages between the victim and Fisler.",
+      "url": "https://6abc.com/post/ashley-fisler-arrest-former-washington-twp-teacher-charged-sexually-assaulting-student-remain-behind-bars/18829981/",
       "source": "6abc",
       "cat": "regional",
-      "date": "2026-04-03T03:39:07+00:00"
+      "date": "2026-04-03T03:41:37+00:00"
     },
     {
       "title": "4 a.m. last call? Philly begins accepting permits for later bar service for World Cup",
@@ -449,22 +465,6 @@
       "source": "Spotlight PA",
       "cat": "pa",
       "date": "2026-03-23T18:59:20+00:00"
-    },
-    {
-      "title": "Shapiro parodies and chatbot phone banks — how AI is popping up in Pa. elections",
-      "summary": "HARRISBURG — Candidates for office in Pennsylvania are using AI tools to generate parody images of their rivals, create campaign materials, and answer questionnaires. They aren’t making deepfakes, whi…",
-      "url": "https://www.spotlightpa.org/news/2026/03/ai-election-campaign-deepfake-garrity-shapiro-pennsylvania-capitol/",
-      "source": "Spotlight PA",
-      "cat": "pa",
-      "date": "2026-03-23T08:00:00+00:00"
-    },
-    {
-      "title": "Democrats think they can finally defeat Scott Perry in 2026",
-      "summary": "This article is made possible through Spotlight PA’s partnership with NOTUS , a nonpartisan news organization that covers government and politics with the fresh eyes of early career journalists and th…",
-      "url": "https://www.spotlightpa.org/news/2026/03/scott-perry-pennsylvania-house-democrats-2026-election-federal-government/",
-      "source": "Spotlight PA",
-      "cat": "pa",
-      "date": "2026-03-20T14:15:06+00:00"
     }
   ]
 }
