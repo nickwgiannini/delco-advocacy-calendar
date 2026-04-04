@@ -1,7 +1,55 @@
 {
-  "updated": "2026-04-03T18:33:25.270281+00:00",
+  "updated": "2026-04-04T01:13:10.479669+00:00",
   "count": 57,
   "articles": [
+    {
+      "title": "Central Bucks administrator's firing upheld by state officials",
+      "summary": "The Pennsylvania Department of Education has upheld the firing of a Central Bucks School District administrator.",
+      "url": "https://6abc.com/post/central-bucks-administrators-firing-upheld-state-officials/18836072/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-04-04T00:11:35+00:00"
+    },
+    {
+      "title": "Justice Alito taken to hospital last month after falling ill during Philadelphia event: Sources",
+      "summary": "Alito, who marks 20 years on the bench this year and recently turned 76, was supposed to give the keynote address at the March 20 event but did not make remarks.",
+      "url": "https://abcnews.com/US/justice-alito-hospital-month-after-falling-ill-event/story?id=131693065",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-04-03T21:59:25+00:00"
+    },
+    {
+      "title": "Shapiro joins lawsuit challenging Trump's executive order on voting",
+      "summary": "Pennsylvania Governor Josh Shapiro is joining a lawsuit that challenges an executive order issued by President Trump earlier this week.",
+      "url": "https://6abc.com/post/shapiro-joins-lawsuit-challenging-trumps-executive-order-voting/18836081/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-04-03T21:03:07+00:00"
+    },
+    {
+      "title": "South Jersey pre-kindergarten aide charged with sexually assaulting kids over 10-year span",
+      "summary": "The Atlantic County Prosecutor's Office says the charges stem from reported incidents involving multiple victims under the age of 13 between 2014 and 2025.",
+      "url": "https://6abc.com/post/south-jersey-pre-kindergarten-aide-charged-sexually-assaulting-kids-10-year-span/18831373/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-04-03T20:59:57+00:00"
+    },
+    {
+      "title": "Grandson makes 'Mama' proud as beloved NYC pizzeria expands",
+      "summary": "Mama's Too has been named the best pizza slice in the world. So what makes it so good?",
+      "url": "https://abc7.com/videoClip/pizza-mamas-too-pizzeria-new-york/18835546/",
+      "source": "6abc",
+      "cat": "regional",
+      "date": "2026-04-03T19:52:47+00:00"
+    },
+    {
+      "title": "Democratic states sue Trump over mail-in ballot order, joining rush to courts",
+      "summary": "President Donald Trump’s executive order restricting mail ballots faced a fresh challenge on Friday, as a coalition of Democratic states filed a lawsuit seeking to block an order that experts say is a…",
+      "url": "https://penncapital-star.com/2026/04/03/repub/democratic-states-sue-trump-over-mail-in-ballot-order-joining-rush-to-courts/",
+      "source": "Capital-Star",
+      "cat": "pa",
+      "date": "2026-04-03T19:17:48+00:00"
+    },
     {
       "title": "Republicans applaud immigrant detention — until it’s in their back yards",
       "summary": "WASHINGTON — New Hampshire’s Republican governor, frustrated with little information about the Department of Homeland Security’s plan to put a new detention facility in her state, joined local Democra…",
@@ -27,14 +75,6 @@
       "date": "2026-04-03T16:33:17+00:00"
     },
     {
-      "title": "Selections from late WMMR DJ Pierre Robert's vinyl collection to be up for sale",
-      "summary": "Fans who grew up listening to the late WMMR DJ Pierre Robert will get an opportunity to purchase a piece of his legacy.",
-      "url": "https://6abc.com/post/selections-late-wmmr-dj-pierre-roberts-vinyl-collection-sale/18834932/",
-      "source": "6abc",
-      "cat": "regional",
-      "date": "2026-04-03T15:53:35+00:00"
-    },
-    {
       "title": "Trump’s SAVE America Act would end voter registration drives nationwide",
       "summary": "Before Wyoming elections, the state’s League of Women Voters tries to get voter registration information into the hands of residents at events and gatherings. But under state law, League volunteers ca…",
       "url": "https://penncapital-star.com/2026/04/03/repub/trumps-save-america-act-would-end-voter-registration-drives-nationwide/",
@@ -43,28 +83,12 @@
       "date": "2026-04-03T15:21:42+00:00"
     },
     {
-      "title": "South Jersey pre-kindergarten aide charged with sexually assaulting kids over 10-year span",
-      "summary": "The Atlantic County Prosecutor's Office says the charges stem from reported incidents involving multiple victims under the age of 13 between 2014 and 2025.",
-      "url": "https://6abc.com/post/south-jersey-pre-kindergarten-aide-charged-sexually-assaulting-kids-10-year-span/18831373/",
-      "source": "6abc",
-      "cat": "regional",
-      "date": "2026-04-03T13:42:18+00:00"
-    },
-    {
       "title": "‘It’s a safe space’: Mobile midwifery clinics meet patients where they are",
       "summary": "MIAMI — Midwife Sheila Simms Watson leaned to gently press on the pregnant woman’s belly. Me’Asia Taylor lay on a bed fitted with tie-dyed purple printed sheets in the corner of the RV. Far from a typ…",
       "url": "https://penncapital-star.com/2026/04/03/repub/its-a-safe-space-mobile-midwifery-clinics-meet-patients-where-they-are/",
       "source": "Capital-Star",
       "cat": "pa",
       "date": "2026-04-03T13:18:30+00:00"
-    },
-    {
-      "title": "Police seek hit-and-run driver after 14-year-old bicyclist hit by SUV in Hatboro",
-      "summary": "Hatboro police are searching for the driver of an SUV who struck a 14-year-old bicyclist and then drove away Monday afternoon",
-      "url": "https://6abc.com/post/hatboro-police-seek-hit-run-driver-suv-hits-14-year-old-bicyclist/18831636/",
-      "source": "6abc",
-      "cat": "regional",
-      "date": "2026-04-03T12:17:49+00:00"
     },
     {
       "title": "New Hope is one of Pa.’s artsiest towns. Here’s how to spend a day there.",
@@ -81,22 +105,6 @@
       "source": "Spotlight PA",
       "cat": "pa",
       "date": "2026-04-03T08:00:00+00:00"
-    },
-    {
-      "title": "Former NJ teacher charged with sexually assaulting student to remain behind bars",
-      "summary": "During a hearing this week, prosecutors revealed investigators recovered approximately 7,500 pages of text messages between the victim and Fisler.",
-      "url": "https://6abc.com/post/ashley-fisler-arrest-former-washington-twp-teacher-charged-sexually-assaulting-student-remain-behind-bars/18829981/",
-      "source": "6abc",
-      "cat": "regional",
-      "date": "2026-04-03T03:41:37+00:00"
-    },
-    {
-      "title": "4 a.m. last call? Philly begins accepting permits for later bar service for World Cup",
-      "summary": "With a huge summer on tap for Philadelphia, a new opportunity to stay open two hours later than usual is now in the mix.",
-      "url": "https://6abc.com/post/4-am-last-call-philadelphia-begins-accepting-permits-later-bar-service-world-cup/18831633/",
-      "source": "6abc",
-      "cat": "regional",
-      "date": "2026-04-03T03:36:10+00:00"
     },
     {
       "title": "Perry County community gets delay in data center ordinance",
@@ -329,14 +337,6 @@
       "source": "Capital-Star",
       "cat": "pa",
       "date": "2026-03-31T16:28:16+00:00"
-    },
-    {
-      "title": "Trump’s hunt for undocumented Medicaid enrollees in Pa. and other states yields few violators",
-      "summary": "Spokespeople from Pennsylvania’s and Colorado’s Medicaid agencies said, as of March, the states had found no one who needed to be terminated from Medicaid.",
-      "url": "https://penncapital-star.com/health/trumps-hunt-for-undocumented-medicaid-enrollees-in-pa-and-other-states-yields-few-violators/",
-      "source": "Capital-Star",
-      "cat": "pa",
-      "date": "2026-03-31T16:00:30+00:00"
     },
     {
       "title": "As Shapiro opposes ICE detention centers, his GOP opponent for Pa. governor stays vague",
